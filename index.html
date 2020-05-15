@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<!-- 
+		*	<HEAD>
+		*	- Changement des dichiers de bootsrap en CDN pour le CSS/JS/JQUERY
+		*	- Ajout d'un titre dans la balise <title>
+		*	- Ajout de l'attribut "defer" au début de chaque balise <script>
+		*	- Changement de la valeur "lang" dans la balise <html> en "fr"
+		-->
+		<meta charset="utf-8">
+		
+		<!-- <meta name="keywords" content="seo, google, site web, site internet, agence design paris, agence design"> Change keyword-->
+		<meta name="keywords" content="seo, google, site web, site internet, agence design paris, agence design">
+		<!-- <meta name="description" content=""> Add description-->
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+		<!-- <link rel="shortcut icon" type="image/png" href="favicon.jpg"> Change to favicon.ico-->
+		<link rel="shortcut icon" type="image/png" href="favicon.jpg">
+		
+	<link rel="stylesheet" type="text/css" href="./css/galerie.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="css/et-line.css">
+		
+
+
+		<script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+		<!--<script defer src="js/blocs.js"></script>
+		<script defer src="js/jquery.touchSwipe.js"></script>
+		<script defer src="js/gmaps.js"></script>-->
+
+		<!-- Version CSS / JS minifié pour la Fancybox => L'affichage de la galerie -->
+
+		<title>La Chouette Agence - Accueil</title>
+	</head>
+	<body>
+<!-- 
+* <BODY>
+*	- Ajout d'une balise sémantique <main>
+*	- Indentation pour visibilité du code
+ -->
+		<main>
+<!--
+* ID = block-0
+*	- Delete balise for keywords
+*	- Balise <li></li> en trop
+*	- Page => Contact
+*	- Ajout de l'attribut "title" pour les liens de la navigations
+*	- Ajout de la balise sémantique <header>
+*	- Remplacement du code html du projet par du code html de bootstrap
+*	- Suppression du lien vers l'acceuil, le logo redirige vers le lien
+-->
+			<header class="" id="bloc-0">
+				<nav class="navbar mx-5 py-3">
+					<a class="navbar-brand" href="index.html">
+						<img src="img/la-chouette-agence.png" height="40" alt="paris web design logo agence web meilleure agence">
+					</a>
+					<ul class="nav justify-content-end">
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html" title="Page de contact">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+
+
+			<!--
+			* ID = block-1-hero
+			*	- Suppression de la div "text-center" => Ajout "text-center" à la div "col-sm-12"
+			*	- Ajout d'une balise sémantique <section>
+			*	- Suppression de l'image de texture
+			*	- Modification de l'image background
+			-->
+
+				<section>
+					<div class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge  texture-paper b-parallax" id="bloc-1-hero"> <!-- Vérifier la taille de l'image + ajouter l'effet texture dessus -->
+						<div class="container py-5">
+							<div class="row">
+								<div class="col-12 text-center">
+									<img src="img/logo.png" class="center-block image-resize-mode" width="100" alt="La chouette agence, agence web paris, création logo paris" /> <!-- Vérifier la taille de l'image -->
+									<h1 class="text-center hero-bloc-text tc-white ">La chouette agence</h1>
+									<a href="contact.html" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" id="cta-hero">Contact</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+			<!--
+			*	- Ajout d'une valise sémantique <section> et d'une class "my-5"
+			*	- Suppression de la première <div> avec les class "bloc bgc-white l-bloc" et l'id "bloc-2-services"
+			*	- Remplacement des class de la seconde <div> par "container" "text-center"
+			*	- Ajout des class ligne  : "col-md-8", "d-flex", "justify-content-center", "mb-5"
+			*	- Suppression de la première image qui génére du texte => Balise <h2> avec le contenu du texte de l'image
+			*	- Ré-ajustement des bloc de présentations WEB DESIGN / STRATEGIE / ILLUSTRATIONS
+			*	- Suppression de la première div "text-center" => intégration des class "d-flex", "justify-content-center",dans la div "row"
+			*	- Suppression de l'image de citations
+			* 	- Ajout d'une balise blocquote pour la citation
+			-->
+				<section class="my-5">
+					<div class="container text-center">
+						<div class="row d-flex justify-content-center mb-5">
+							<div class="col-md-8 text-center">
+								<h2>La chouette agence est une agence de web design qui aide les entreprises à devenir attractives et visibles sur internet.</h2>
+							</div>
+						</div>
+						<div class="row mb-5">
+							<div class="col-md-4">
+								<span class="et-icon-browser sm-shadow icon-dark-slate-blue icons icon-lg"></span>
+								<h3 class="mg-md">Web design</h3>
+								<p>Que vous ayez un site web qui a besoin d'un rafraîchissement ou que vous partiez de zéro, laissez-nous vous réaliser un design dont vous serez fier.</p>
+							</div>
+							<div class="col-md-4">
+								<span class="et-icon-presentation sm-shadow icon-dark-slate-blue icons icon-lg"></span>
+								<h3 class="mg-md">Stratégie</h3>
+								<p>Plutôt que de suggérer des designs à la mode, nous travaillerons avec vous pour comprendre vos objectifs commerciaux afin de vous proposer le meilleur design possible.</p>
+							</div>
+							<div class="col-sm-4">
+								<span class="et-icon-edit sm-shadow icon-dark-slate-blue icons icon-lg"></span>
+								<h3 class="mg-md text-center">Illustrations</h3>
+								<p class="text-center ">Un bon design n'est rien sans de bonnes illustrations. Laissez faire notre équipe de graphistes talentueux pour donner à vos pages une touche finale d'élégance.</p>
+							</div>
+						</div>
+						<div class="row d-flex justify-content-center">
+							<div class="col-md-9">
+								<blockquote class="blockquote">
+									<p class="mb-0 lead">"La Chouette agence est une excellente agence werb ! Les web designers ont réussi à capturer l'essence de notre entreprise et à l'intégrer à notre site. Cela nous a aidé à doubler nos ventes en ligne à Lyon."</p>
+									<footer class="blockquote-footer">Maxime Guibard, PDG de <cite title="Source Title">À vos fourchettes</cite></footer>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<!--
+				*	- Ajout d'une balise sémantique <section>
+				* 	- Changement du titre et du paragraphe
+				*	- Changement du lien vers la page contact pour plus de visibilité
+				-->
+				<section>
+					<div class="bloc tc-white bgc-atomic-tangerine bg-presentation d-bloc bloc-bg-texture texture-paper b-parallax" id="bloc-3-what-i-do">
+						<div class="container bloc-lg">
+							<div class="row tight-width-whitespace black-background">
+								<div class="col-sm-12 text-center">
+									<h2 class="tc-white mb-3">Aider les entreprises Lyonnaise à se développer et à connaître le succès.</h2>
+									<p class="white">Nous aimons collaborer avec des entrepreneurs créatifs et des entreprises locale afin d'attirer de nouveaux clients. Qu’elles aient besoin de créer un site de A à Z ou de donner un coup de jeune à leur site. Que vous ayez besoin d’une identité visuelle complète ou d’une refonte de votre site, n’hésitez pas à nous contacter. Nous travaillerons ensemble pour créer des sites beau et bien structurés, qui seront facilement trouvable sur les moteurs de recherche.</p>
+									<a class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" href="contact.html">Contactez notre équipe</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!--
+				*	- Ajout d'une balise sémantique <section>
+				*	- Suppression de la première <div> parent
+				*	- Suppression de l'image et remplacement du texte par une balise <h2>
+				*	- Ajout du code css pour l'affichage de la galerie
+				*	- Ajout de balise paragraphe <p> dans le "data-caption" de la galerie
+				*	- Changement du diaporama par une librairie Fancybox en CDN
+				*	- Modifications des paragraphes
+				-->
+				<section>
+					<div class="container bloc-lg">
+						<div class="row d-flex justify-content-center mb-5">
+							<div class="col-md-8 text-center">
+								<h2>Nous travaillons avec beacuoup de clients, voici nos réalisations.</h2>
+							</div>
+						</div>
+						<div class="row d-flex justify-content-center mb-5">
+							<div class="col-6 text-center">
+								<a href="img/1.jpg" data-fancybox="group" data-caption="<p class='lead text-white'>Refonte d'un site web pour un journal local<p>">
+									<img src="img/1.jpg" class="img-fluid rounded" />
+								</a>
+								<div class="py-3">
+									<h3 class="text-uppercase">Refonte d'un site web pour un journal local</h3>
+									<p>Un journal lyonnais, intéressé par nos travaux, nous a demandé de leur créer une nouvelle identité visuelle.</p>
+								</div>
+							</div>
+							<div class="col-6 text-center">
+								<a href="img/2.jpg" data-fancybox="group" data-caption="<p class='lead text-white'>Création d'un site web pour photographes<p>">
+									<img src="img/2.jpg" class="img-fluid rounded" />
+								</a>
+								<div class="py-3">
+									<h3 class="text-uppercase">Création d'un site web pour photographes</h3>
+									<p>Nous avons conçu la plateforme idéale pour laisser place aux clichés des photographes.</p>
+								</div>
+							</div>
+						</div>
+						<div class="row d-flex justify-content-center">
+							<div class="col-6 text-center">
+								<a href="img/3.bmp" data-fancybox="group" data-caption="<p class='lead text-white'>Création d'un site internet pour un voyageur<p>">
+									<img src="img/3.bmp" class="img-fluid rounded">
+								</a>
+								<div class="py-3">
+									<h3 class="text-uppercase">Création d'un site internet pour un voyageur </h3>
+									<p>Les clichés créent par les photographes gardent toutes leurs splendeur sur cette plateforme idéalement conçu par nois soins.</p>
+								</div>
+							</div>
+							<div class="col-6 text-center">
+								<a href="img/4.bmp" data-fancybox="group" data-caption="<p class='lead text-white'>Conception d'un site pour une agence de mariage<p>">
+									<img src="img/4.bmp" class="img-fluid rounded">
+								</a>
+								<div class="py-3">
+									<h3 class="text-uppercase">Conception d'un site pour une agence de mariage </h3>
+									<p>Vos mariages sont les priorités pour cette agence. C'est pourquoi, nous travaillons avec eux afin qu'ils puissent vous proposer les meilleurs présentation détaillée de leur prestations sur leur site internet.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!--
+				*	- Suppressions de l'image de texture / incorporation de l'effet de texture sur l'image via Photoshop
+				*	- Ajout d'une balise sémantique <section>
+				*
+				*
+				-->
+			<div class="bloc bgc-dark-slate-blue bg-banniere d-bloc" id="bloc-5-cta">
+				<div class="container">
+					<div class="row py-5">
+						<div class="col-sm-12 text-center">
+							<p class="text-center tc-white lead">Prêt pour redonner vie à votre projet ?<br>Contactez notre équipe !</p>
+							<a href="page2.html" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Contact</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--
+			*	- Ajouter d'une balise sémantique <footer>
+			*	- 
+			*
+			*
+			-->
+			<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+				<div class="container bloc-sm">
+					<div class="row text-center mb-5">
+						<div class="col">
+							<h2 class="h2 text-white">La chouette agence</h2>
+							<h3 class="text-sm">Agence web basée à Lyon</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="row social">
+								<div class="col-sm-3">
+									<div class="text-center">
+										<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="text-center">
+										<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="text-center">
+										<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="text-center">
+										<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
+									</div>
+								</div>
+								<div class="keywords" style="color:#F3976C;">Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4">
+									Partenaires
+										<ul>
+											<li><a href="voiture.com">voiture.com</a></li>
+											<li><a href="pizza.com">pizza.com</a></li>
+											<li><a href="matoiture.com">matoiture.com</a></li>
+											<li><a href="immobilierseo.com">immobilierseo.com</a></li>
+										</ul>		
+								</div>
+								<div class="col-sm-4">
+									Annuaires liste 1
+									<ul>
+										<li><a href="annuaireagence.com">annuaireagence.com</a></li>
+										<li><a href="annuaireseo.com">annuaireseo.com</a></li>
+										<li><a href="annuairemarketing.com">annuairemarketing.com</a></li>
+										<li><a href="123seoture.com">123seo.com</a></li>
+										<li><a href="123site.com">123site.com</a></li>
+										<li><a href="annuairewordpress.com">annuairewordpress.com</a></li>
+										<li><a href="listeagence.com">listeagence.com</a></li>
+										<li><a href="meilleuresagencesparis.com">meilleuresagencesparis.com</a></li>
+										<li><a href="listeseo.com">listeseo.com</a></li>
+									</ul>
+								</div>
+								<div class="col-sm-4">
+									Annuaires liste 2
+									<ul>
+										<li><a href="betterseo.com">betterseo.com</a></li>
+										<li><a href="ameliorerseo.com">ameliorerseo.com</a></li>
+										<li><a href="seojuicelien.com">seojuicelien.com</a></li>
+										<li><a href="meilleursliens.com">meilleursliens.com</a></li>
+										<li><a href="liensagogo.com">liensagogo.com</a></li>
+										<li><a href="backlink.com">backlink.com</a></li>
+										<li><a href="linkjuiceannuaire.com">linkjuiceannuaire.com</a></li>
+										<li><a href="remontersurgoogle.com">remontersurgoogle.com</a></li>
+										<li><a href="vraiseofiable.com">vraiseofiable.com</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<main>
+	</body>
+</html>
