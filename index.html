@@ -5,36 +5,32 @@
 		*	<HEAD>
 		*	- Changement des dichiers de bootsrap en CDN pour le CSS/JS/JQUERY
 		*	- Ajout d'un titre dans la balise <title>
+		*	- Ajout d'une description dans la balise méta description
 		*	- Ajout de l'attribut "defer" au début de chaque balise <script>
 		*	- Changement de la valeur "lang" dans la balise <html> en "fr"
+		*	- Ajout d'une balise no-script
+		*	- Modification des tailles des images via Photoshop
+		*	- Amélioration du poid des images via un convertisseur
+		*	- Changement de la favicon.jpg en favicon.ico / l'attribut "type" / l'attribut "rel"
+		*	- Fichier CSS "et-line.css" alléger du code non-utilisable & minifié
+		*	-
 		-->
 		<meta charset="utf-8">
-		
-		<!-- <meta name="keywords" content="seo, google, site web, site internet, agence design paris, agence design"> Change keyword-->
+		<noscript>Votre navigateur ne supporte pas javascript !</noscript>
 		<meta name="keywords" content="seo, google, site web, site internet, agence design paris, agence design">
-		<!-- <meta name="description" content=""> Add description-->
-		<meta name="description" content="">
+		<meta name="description" content="La Chouette agence ">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-		<!-- <link rel="shortcut icon" type="image/png" href="favicon.jpg"> Change to favicon.ico-->
-		<link rel="shortcut icon" type="image/png" href="favicon.jpg">
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
 		
-	<link rel="stylesheet" type="text/css" href="./css/galerie.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 		<link rel="stylesheet" type="text/css" href="css/et-line.css">
-		
-
 
 		<script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 		<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
 		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-		<!--<script defer src="js/blocs.js"></script>
-		<script defer src="js/jquery.touchSwipe.js"></script>
-		<script defer src="js/gmaps.js"></script>-->
-
-		<!-- Version CSS / JS minifié pour la Fancybox => L'affichage de la galerie -->
+		<script defer src="https://kit.fontawesome.com/69d9156c55.js" crossorigin="anonymous"></script>
 
 		<title>La Chouette Agence - Accueil</title>
 	</head>
@@ -54,11 +50,12 @@
 *	- Ajout de la balise sémantique <header>
 *	- Remplacement du code html du projet par du code html de bootstrap
 *	- Suppression du lien vers l'acceuil, le logo redirige vers le lien
+*	- Modification de l'attribut "alt" dans la balise <img>
 -->
-			<header class="" id="bloc-0">
+			<header id="bloc-0">
 				<nav class="navbar mx-5 py-3">
 					<a class="navbar-brand" href="index.html">
-						<img src="img/la-chouette-agence.png" height="40" alt="paris web design logo agence web meilleure agence">
+						<img src="img/la-chouette-agence-214x40.png" alt="Logo La Chouette Agence - Agence web basé à Lyon">
 					</a>
 					<ul class="nav justify-content-end">
 						<li class="nav-item">
@@ -78,11 +75,11 @@
 			-->
 
 				<section>
-					<div class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge  texture-paper b-parallax" id="bloc-1-hero"> <!-- Vérifier la taille de l'image + ajouter l'effet texture dessus -->
+					<div class="bg-banniere bg-t-edge b-parallax" id="bloc-1-hero"> <!-- Vérifier la taille de l'image + ajouter l'effet texture dessus -->
 						<div class="container py-5">
 							<div class="row">
 								<div class="col-12 text-center">
-									<img src="img/logo.png" class="center-block image-resize-mode" width="100" alt="La chouette agence, agence web paris, création logo paris" /> <!-- Vérifier la taille de l'image -->
+									<img src="img/logo-100x100.png" class="center-block image-resize-mode mb-3" alt="La chouette agence, agence web paris, création logo paris" /> <!-- Vérifier la taille de l'image -->
 									<h1 class="text-center hero-bloc-text tc-white ">La chouette agence</h1>
 									<a href="contact.html" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" id="cta-hero">Contact</a>
 								</div>
@@ -166,6 +163,7 @@
 				*	- Ajout de balise paragraphe <p> dans le "data-caption" de la galerie
 				*	- Changement du diaporama par une librairie Fancybox en CDN
 				*	- Modifications des paragraphes
+				*	- Ajout de l'attribut "alt" dans les balise <img>
 				-->
 				<section>
 					<div class="container bloc-lg">
@@ -175,18 +173,18 @@
 							</div>
 						</div>
 						<div class="row d-flex justify-content-center mb-5">
-							<div class="col-6 text-center">
-								<a href="img/1.jpg" data-fancybox="group" data-caption="<p class='lead text-white'>Refonte d'un site web pour un journal local<p>">
-									<img src="img/1.jpg" class="img-fluid rounded" />
+							<div class="col-md-6 text-center">
+								<a href="img/photo-1-560x560.jpg" data-fancybox="group" data-caption="<p class='lead text-white'>Refonte d'un site web pour un journal local<p>">
+									<img src="img/photo-1-320x320.jpg" class="img-fluid rounded" alt="Refonte d'un site web pour un journal local" />
 								</a>
 								<div class="py-3">
 									<h3 class="text-uppercase">Refonte d'un site web pour un journal local</h3>
 									<p>Un journal lyonnais, intéressé par nos travaux, nous a demandé de leur créer une nouvelle identité visuelle.</p>
 								</div>
 							</div>
-							<div class="col-6 text-center">
-								<a href="img/2.jpg" data-fancybox="group" data-caption="<p class='lead text-white'>Création d'un site web pour photographes<p>">
-									<img src="img/2.jpg" class="img-fluid rounded" />
+							<div class="col-md-6 text-center">
+								<a href="img/photo-2-560x560.jpg" data-fancybox="group" data-caption="<p class='lead text-white'>Création d'un site web pour photographes<p>">
+									<img src="img/photo-2-320x320.jpg" class="img-fluid rounded" alt="Création d'un site web pour photographes" />
 								</a>
 								<div class="py-3">
 									<h3 class="text-uppercase">Création d'un site web pour photographes</h3>
@@ -195,18 +193,18 @@
 							</div>
 						</div>
 						<div class="row d-flex justify-content-center">
-							<div class="col-6 text-center">
-								<a href="img/3.bmp" data-fancybox="group" data-caption="<p class='lead text-white'>Création d'un site internet pour un voyageur<p>">
-									<img src="img/3.bmp" class="img-fluid rounded">
+							<div class="col-md-6 text-center">
+								<a href="img/photo-3-560x560.jpg" data-fancybox="group" data-caption="<p class='lead text-white'>Création d'un site internet pour un voyageur<p>">
+									<img src="img/photo-3-320x320.jpg" class="img-fluid rounded" alt="Création d'un site internet pour un voyageur" />
 								</a>
 								<div class="py-3">
 									<h3 class="text-uppercase">Création d'un site internet pour un voyageur </h3>
 									<p>Les clichés créent par les photographes gardent toutes leurs splendeur sur cette plateforme idéalement conçu par nois soins.</p>
 								</div>
 							</div>
-							<div class="col-6 text-center">
-								<a href="img/4.bmp" data-fancybox="group" data-caption="<p class='lead text-white'>Conception d'un site pour une agence de mariage<p>">
-									<img src="img/4.bmp" class="img-fluid rounded">
+							<div class="col-md-6 text-center">
+								<a href="img/photo-4-560x560.jpg" data-fancybox="group" data-caption="<p class='lead text-white'>Conception d'un site pour une agence de mariage<p>">
+									<img src="img/photo-4-320x320.jpg" class="img-fluid rounded" alt="Conception d'un site pour une agence de mariage" />
 								</a>
 								<div class="py-3">
 									<h3 class="text-uppercase">Conception d'un site pour une agence de mariage </h3>
@@ -228,7 +226,7 @@
 					<div class="row py-5">
 						<div class="col-sm-12 text-center">
 							<p class="text-center tc-white lead">Prêt pour redonner vie à votre projet ?<br>Contactez notre équipe !</p>
-							<a href="page2.html" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Contact</a>
+							<a href="contact.html" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Contact</a>
 						</div>
 					</div>
 				</div>
