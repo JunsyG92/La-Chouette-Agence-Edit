@@ -1,95 +1,104 @@
-<!doctype html>
-<html lang="fr">
-	<head>
-		<!-- 
-		*	<HEAD>
-		*	- Changement des dichiers de bootsrap en CDN pour le CSS/JS/JQUERY
-		*	- Ajout d'un titre dans la balise <title>
-		*	- Ajout d'une description dans la balise méta description
-		*	- Ajout de l'attribut "defer" au début de chaque balise <script>
-		*	- Changement de la valeur "lang" dans la balise <html> en "fr"
-		*	- Ajout d'une balise no-script
-		*	- Modification des tailles des images via Photoshop
-		*	- Amélioration du poid des images via un convertisseur
-		*	- Changement de la favicon.jpg en favicon.ico / l'attribut "type" / l'attribut "rel"
-		*	- Fichier CSS "et-line.css" alléger du code non-utilisable & minifié
-		*	-
-		-->
-		<meta charset="utf-8">
-		<noscript>Votre navigateur ne supporte pas javascript !</noscript>
-		<meta name="keywords" content="seo, google, site web, site internet, agence design paris, agence design">
-		<meta name="description" content="La Chouette agence ">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-		<link rel="icon" type="image/x-icon" href="favicon.ico">
-		
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="stylesheet" type="text/css" href="css/et-line.css">
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head itemscope="" itemtype="https://schema.org/WebSite">
+    <meta charset="UTF-8" />
+    <meta name="google-site-verification" content="XivRUg8klKSzHA4GYX_sIA2oMXM3IaWZ6qonN0olCvU"/>
+    <meta name="keywords" content="Accueil La Chouette Agence, Chouette Agence, Chouette, Agence web, Lyon, Agence web Lyon, Digital, Stratégie, Site internet, Site web, Web, Création de site web, Design, Création de design, Création de maquette web, Maquette web,"/>
+    <meta name="description" content="La Chouette Agence, création de site web et d'identité visuelle pour professionnel. Nous vous aidons à programmer une statégie digital pour une meilleur visibilité de votre entreprise sur internet. Que vous ayez déjà une base ou non, nous nous adapterons à votre entreprise afin de maximiser vos résultats !"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
-		<script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-		<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-		<script defer src="https://kit.fontawesome.com/69d9156c55.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" type="text/css" href="main.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/et-line.min.css" />
 
-		<title>La Chouette Agence - Accueil</title>
-	</head>
-	<body>
-<!-- 
+    <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script defer src="https://kit.fontawesome.com/69d9156c55.js" crossorigin="anonymous"></script>
+    <title>La Chouette Agence - Accueil</title>
+  </head>
+  <!-- 
+	*	<HEAD>
+			=> https://jaetheme.com/balises-html5/
+	*	- Changement des fichiers de bootsrap en CDN pour le CSS/JS/JQUERY
+			=> https://getbootstrap.com/
+	*	- Ajout d'un titre dans la balise <title>
+			=> https://www.definitions-seo.com/definition-de-balise-title/
+	*	- Ajout d'une description dans la balise méta description
+			=> https://www.definitions-seo.com/definition-de-balise-meta-description/?highlight=meta%20description
+	*	- Ajout de l'attribut "defer" au début de chaque balise <script>
+			=> https://www.w3schools.com/tags/att_script_defer.asp
+	*	- Changement de la valeur "lang" dans la balise <html> en "fr"
+			=> https://www.w3.org/International/questions/qa-html-language-declarations.fr
+	*	- Ajout d'une balise no-script
+			=> https://developer.mozilla.org/fr/docs/Web/HTML/Element/noscript
+	*	- Modification des tailles des images via Photoshop
+	*	- Amélioration du poid des images via un convertisseur
+			=> https://www.lafabriquedunet.fr/creation-site-vitrine/articles/optimiser-images-web/
+	*	- Changement de la favicon.jpg en favicon.ico / l'attribut "type" / l'attribut "rel"
+			=> https://www.joptimisemonsite.fr/favicon-definition-creation-format-traduction/
+	*	- Fichier CSS "et-line.css" alléger du code non-utilisable & minifié
+	*	- Changement pour un CDN pour Fontawesome
+	*	- Ajout attribut "title" pour toutes les balise link <a>
+	-->
+  <body itemscope="" itemtype="https://schema.org/WebPage">
+    <noscript >Vous ou votre navigateur n'acceptez pas les script. La Chouette Agence utilise des script pour le bon fonctionnement du site. Veuillez activer l'utilisation des script</noscript>
+    <!-- 
 * <BODY>
 *	- Ajout d'une balise sémantique <main>
 *	- Indentation pour visibilité du code
  -->
-		<main>
+    <main>
 <!--
 * ID = block-0
 *	- Delete balise for keywords
-*	- Balise <li></li> en trop
+*	- Balise <li>
+</li> en trop
 *	- Page => Contact
 *	- Ajout de l'attribut "title" pour les liens de la navigations
 *	- Ajout de la balise sémantique <header>
 *	- Remplacement du code html du projet par du code html de bootstrap
 *	- Suppression du lien vers l'acceuil, le logo redirige vers le lien
 *	- Modification de l'attribut "alt" dans la balise <img>
--->
-			<header id="bloc-0">
-				<nav class="navbar mx-5 py-3">
-					<a class="navbar-brand" href="index.html">
-						<img src="img/la-chouette-agence-214x40.png" alt="Logo La Chouette Agence - Agence web basé à Lyon">
-					</a>
-					<ul class="nav justify-content-end">
-						<li class="nav-item">
-							<a class="nav-link" href="contact.html" title="Page de contact">Contact</a>
-						</li>
-					</ul>
-				</nav>
-			</header>
-
-
-			<!--
+--> 
+      <header itemscope="" itemtype="https://schema.org/WPHeader">
+        <nav class="navbar navbar-expand-lg navbar-light container py-4" itemscope="" itemtype="https://schema.org/SiteNavigationElement">
+          <a class="navbar-brand" href="index.html" title="Page d'accueil">
+            <img src="img/la-chouette-agence-214x40.png" alt="Logo La Chouette Agence - Agence web basé à Lyon"/>
+          </a>
+          <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="analyse.html" title="Page de contact">Analyse</a>
+              <a class="nav-link" href="contact.html" title="Page de contact">Contact</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+ <!--
 			* ID = block-1-hero
 			*	- Suppression de la div "text-center" => Ajout "text-center" à la div "col-sm-12"
 			*	- Ajout d'une balise sémantique <section>
 			*	- Suppression de l'image de texture
 			*	- Modification de l'image background
 			-->
-
-				<section>
-					<div class="bg-banniere bg-t-edge b-parallax" id="bloc-1-hero"> <!-- Vérifier la taille de l'image + ajouter l'effet texture dessus -->
-						<div class="container py-5">
-							<div class="row">
-								<div class="col-12 text-center">
-									<img src="img/logo-100x100.png" class="center-block image-resize-mode mb-3" alt="La chouette agence, agence web paris, création logo paris" /> <!-- Vérifier la taille de l'image -->
-									<h1 class="text-center hero-bloc-text tc-white ">La chouette agence</h1>
-									<a href="contact.html" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" id="cta-hero">Contact</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-
-			<!--
+      <section class="bg-banniere bloc b-parallax"> <!-- Vérifier la taille de l'image + ajouter l'effet texture dessus -->
+        <div class="container py-8">
+          <div class="row">
+            <div class="col-12 text-center">
+              <img src="img/logo-100x100.png" alt="La chouette agence, agence web paris, création logo paris" /> <!-- Vérifier la taille de l'image -->
+              <h1 class="text-center text-white my-5 lead-2"> La Chouette Agence </h1>
+              <a href="contact.html" class="btn btn-clean rounded-pill p-3 btn-chouette text-uppercase" title="Page contact" >Contact</a >
+            </div>
+          </div>
+        </div>
+      </section>
+ <!--
 			*	- Ajout d'une valise sémantique <section> et d'une class "my-5"
 			*	- Suppression de la première <div> avec les class "bloc bgc-white l-bloc" et l'id "bloc-2-services"
 			*	- Remplacement des class de la seconde <div> par "container" "text-center"
@@ -98,64 +107,57 @@
 			*	- Ré-ajustement des bloc de présentations WEB DESIGN / STRATEGIE / ILLUSTRATIONS
 			*	- Suppression de la première div "text-center" => intégration des class "d-flex", "justify-content-center",dans la div "row"
 			*	- Suppression de l'image de citations
-			* 	- Ajout d'une balise blocquote pour la citation
+			* 	- Ajout d'une balise <blocquote> pour la citation et d'une balise <cite> pour le nom de l'agence
+			*	- Ajout d'une balise sémantique <figure> pour englober l'ensemble du bloc et <figcaption> pour les descriptions
+			*	- Réduction du nombre de div
+			*	- Amélioration de la lisibilité des textes
 			-->
-				<section class="my-5">
-					<div class="container text-center">
-						<div class="row d-flex justify-content-center mb-5">
-							<div class="col-md-8 text-center">
-								<h2>La chouette agence est une agence de web design qui aide les entreprises à devenir attractives et visibles sur internet.</h2>
-							</div>
-						</div>
-						<div class="row mb-5">
-							<div class="col-md-4">
-								<span class="et-icon-browser sm-shadow icon-dark-slate-blue icons icon-lg"></span>
-								<h3 class="mg-md">Web design</h3>
-								<p>Que vous ayez un site web qui a besoin d'un rafraîchissement ou que vous partiez de zéro, laissez-nous vous réaliser un design dont vous serez fier.</p>
-							</div>
-							<div class="col-md-4">
-								<span class="et-icon-presentation sm-shadow icon-dark-slate-blue icons icon-lg"></span>
-								<h3 class="mg-md">Stratégie</h3>
-								<p>Plutôt que de suggérer des designs à la mode, nous travaillerons avec vous pour comprendre vos objectifs commerciaux afin de vous proposer le meilleur design possible.</p>
-							</div>
-							<div class="col-sm-4">
-								<span class="et-icon-edit sm-shadow icon-dark-slate-blue icons icon-lg"></span>
-								<h3 class="mg-md text-center">Illustrations</h3>
-								<p class="text-center ">Un bon design n'est rien sans de bonnes illustrations. Laissez faire notre équipe de graphistes talentueux pour donner à vos pages une touche finale d'élégance.</p>
-							</div>
-						</div>
-						<div class="row d-flex justify-content-center">
-							<div class="col-md-9">
-								<blockquote class="blockquote">
-									<p class="mb-0 lead">"La Chouette agence est une excellente agence werb ! Les web designers ont réussi à capturer l'essence de notre entreprise et à l'intégrer à notre site. Cela nous a aidé à doubler nos ventes en ligne à Lyon."</p>
-									<footer class="blockquote-footer">Maxime Guibard, PDG de <cite title="Source Title">À vos fourchettes</cite></footer>
-								</blockquote>
-							</div>
-						</div>
-					</div>
-				</section>
-
-
-				<!--
+      <section class="container text-center my-7">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2 class="lead-3"> La Chouette Agence est une agence de web design qui aide les entreprises à devenir attractives et visibles sur internet.</h2>
+          </div>
+        </div>
+        <figure class="row">
+          <aside class="col-md-4 my-6">
+            <span class="et-icon-browser icon-dark-slate-blue display-3"></span>
+            <h3 class="lead-4 text-uppercase my-4"><strong>Web design</strong></h3>
+            <p>Que vous ayez un site web qui a besoin d'un rafraîchissement ou que vous partiez de zéro, laissez-nous vous réaliser un design dont vous serez fier.</p>
+          </aside>
+          <aside class="col-md-4 my-6">
+            <span class="et-icon-presentation icon-dark-slate-blue display-3"></span>
+            <h3 class="lead-4 text-uppercase my-4"><strong>Stratégie</strong></h3>
+            <p>Plutôt que de suggérer des designs à la mode, nous travaillerons avec vous pour comprendre vos objectifs commerciaux afin de vous proposer le meilleur design possible.</p>
+          </aside>
+          <aside class="col-md-4 my-6">
+            <span class="et-icon-edit icon-dark-slate-blue display-3"></span>
+            <h3 class="lead-4 text-uppercase my-4"><strong>Illustrations</strong></h3>
+            <p class="text-center">Un bon design n'est rien sans de bonnes illustrations. Laissez faire notre équipe de graphistes talentueux pour donner à vos pages une touche finale d'élégance.</p>
+          </aside>
+        </figure>
+        <blockquote class="blockquote row d-flex justify-content-center">
+          <cite class="mb-0 lead col-md-9"><i>"La Chouette agence est une excellente agence web ! Les web designers ont réussi à capturer l'essence de notre entreprise et à l'intégrer à notre site. Cela nous a aidé à doubler nos ventes en ligne à Lyon."</i></cite>
+          <p class="blockquote-footer">Maxime Guibard, PDG de <cite title="Source Title">À vos fourchettes</cite></p>
+        </blockquote>
+      </section>
+ <!--
 				*	- Ajout d'une balise sémantique <section>
 				* 	- Changement du titre et du paragraphe
 				*	- Changement du lien vers la page contact pour plus de visibilité
+				*	- Suppression d'une prase répétitive
 				-->
-				<section>
-					<div class="bloc tc-white bgc-atomic-tangerine bg-presentation d-bloc bloc-bg-texture texture-paper b-parallax" id="bloc-3-what-i-do">
-						<div class="container bloc-lg">
-							<div class="row tight-width-whitespace black-background">
-								<div class="col-sm-12 text-center">
-									<h2 class="tc-white mb-3">Aider les entreprises Lyonnaise à se développer et à connaître le succès.</h2>
-									<p class="white">Nous aimons collaborer avec des entrepreneurs créatifs et des entreprises locale afin d'attirer de nouveaux clients. Qu’elles aient besoin de créer un site de A à Z ou de donner un coup de jeune à leur site. Que vous ayez besoin d’une identité visuelle complète ou d’une refonte de votre site, n’hésitez pas à nous contacter. Nous travaillerons ensemble pour créer des sites beau et bien structurés, qui seront facilement trouvable sur les moteurs de recherche.</p>
-									<a class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" href="contact.html">Contactez notre équipe</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<!--
+        <section class="bg-presentation b-parallax">
+          <div class="container py-8">
+            <div class="row black-background">
+              <div class="col-sm-12 text-center">
+                <h2 class="lead-3 color-chouette">Aider les entreprises Lyonnaise à se développer et à connaître le succès.</h2>
+                <p class="py-5">Nous aimons collaborer avec des entrepreneurs créatifs et des entreprises locale afin d'attirer de nouveaux clients. Que vous ayez besoin de créer un site de A à Z, d’une identité visuelle complète ou de donner un coup de jeune à votre site, n'hésitez pas à nous contacter. Nous travaillerons ensemble pour créer des sites beau et bien structurés, qui seront facilement trouvable sur les moteurs de recherche.</p>
+                <a class="btn btn-clean rounded-pill p-3 btn-chouette text-uppercase" href="contact.html" title="Page contact">Contactez notre équipe</a>
+              </div>
+            </div>
+          </div>
+        </section>
+ <!--
 				*	- Ajout d'une balise sémantique <section>
 				*	- Suppression de la première <div> parent
 				*	- Suppression de l'image et remplacement du texte par une balise <h2>
@@ -164,155 +166,117 @@
 				*	- Changement du diaporama par une librairie Fancybox en CDN
 				*	- Modifications des paragraphes
 				*	- Ajout de l'attribut "alt" dans les balise <img>
+				*	- Ajout d'une balise <details> pour la fancybox
+				*	- Ajout d'une balise <article> pour la chaque fancybox
+				*	- Ajout d'un lien vers chaque site créer
+				*	- Réduction du nombre de div
 				-->
-				<section>
-					<div class="container bloc-lg">
-						<div class="row d-flex justify-content-center mb-5">
-							<div class="col-md-8 text-center">
-								<h2>Nous travaillons avec beacuoup de clients, voici nos réalisations.</h2>
-							</div>
-						</div>
-						<div class="row d-flex justify-content-center mb-5">
-							<div class="col-md-6 text-center">
-								<a href="img/photo-1-560x560.jpg" data-fancybox="group" data-caption="<p class='lead text-white'>Refonte d'un site web pour un journal local<p>">
-									<img src="img/photo-1-320x320.jpg" class="img-fluid rounded" alt="Refonte d'un site web pour un journal local" />
-								</a>
-								<div class="py-3">
-									<h3 class="text-uppercase">Refonte d'un site web pour un journal local</h3>
-									<p>Un journal lyonnais, intéressé par nos travaux, nous a demandé de leur créer une nouvelle identité visuelle.</p>
-								</div>
-							</div>
-							<div class="col-md-6 text-center">
-								<a href="img/photo-2-560x560.jpg" data-fancybox="group" data-caption="<p class='lead text-white'>Création d'un site web pour photographes<p>">
-									<img src="img/photo-2-320x320.jpg" class="img-fluid rounded" alt="Création d'un site web pour photographes" />
-								</a>
-								<div class="py-3">
-									<h3 class="text-uppercase">Création d'un site web pour photographes</h3>
-									<p>Nous avons conçu la plateforme idéale pour laisser place aux clichés des photographes.</p>
-								</div>
-							</div>
-						</div>
-						<div class="row d-flex justify-content-center">
-							<div class="col-md-6 text-center">
-								<a href="img/photo-3-560x560.jpg" data-fancybox="group" data-caption="<p class='lead text-white'>Création d'un site internet pour un voyageur<p>">
-									<img src="img/photo-3-320x320.jpg" class="img-fluid rounded" alt="Création d'un site internet pour un voyageur" />
-								</a>
-								<div class="py-3">
-									<h3 class="text-uppercase">Création d'un site internet pour un voyageur </h3>
-									<p>Les clichés créent par les photographes gardent toutes leurs splendeur sur cette plateforme idéalement conçu par nois soins.</p>
-								</div>
-							</div>
-							<div class="col-md-6 text-center">
-								<a href="img/photo-4-560x560.jpg" data-fancybox="group" data-caption="<p class='lead text-white'>Conception d'un site pour une agence de mariage<p>">
-									<img src="img/photo-4-320x320.jpg" class="img-fluid rounded" alt="Conception d'un site pour une agence de mariage" />
-								</a>
-								<div class="py-3">
-									<h3 class="text-uppercase">Conception d'un site pour une agence de mariage </h3>
-									<p>Vos mariages sont les priorités pour cette agence. C'est pourquoi, nous travaillons avec eux afin qu'ils puissent vous proposer les meilleurs présentation détaillée de leur prestations sur leur site internet.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<!--
+        <section class="container my-7">
+          <div class="row d-flex justify-content-center mb-5">
+            <div class="col-md-8 text-center">
+              <h2 class="lead-3"> Nous travaillons avec beacuoup de clients, voici nos réalisations.</h2>
+            </div>
+          </div>
+          <div class="row d-flex">
+            <article class="col-md-6 text-center mb-5">
+              <a href="img/photo-1-560x560.jpg" data-fancybox="group" data-caption="<a class='text-uppercase text-white mb-5 lead' href='https://www.journal-local.com/'>Journal Local</a><details class='lead text-white'>Refonte d'un site web pour un journal local</details>" title="Journal Local">
+                <img src="img/photo-1-320x320.jpg" class="img-fluid rounded" alt="Refonte d'un site web pour un journal local" />
+              </a>
+              <div class="mt-5 w-60 mx-auto">
+                <h3 class="text-uppercase h5"> Refonte d'un site web pour un journal local </h3>
+                <p> Un journal lyonnais, intéressé par nos travaux, nous a demandé de leur créer une nouvelle identité visuelle. </p>
+              </div>
+            </article>
+            <article class="col-md-6 text-center mb-5">
+              <a href="img/photo-2-560x560.jpg" data-fancybox="group" data-caption="<a class='text-uppercase text-white mb-5 lead' href='https://www.photo-pro.com/'>Photo Pro</a> <details class='lead text-white'>Création d'un site web pour photographes</details>" title="Photo Pro">
+                <img src="img/photo-2-320x320.jpg" class="img-fluid rounded" alt="Création d'un site web pour photographes" />
+              </a>
+              <div class="mt-5 w-60 mx-auto">
+                <h3 class="text-uppercase h5"> Création d'un site web pour photographes </h3>
+                <p> Nous avons conçu la plateforme idéale pour laisser place aux clichés des photographes. </p>
+              </div>
+            </article>
+          </div>
+          <div class="row d-flex">
+            <article class="col-md-6 text-center mb-5">
+              <a href="img/photo-3-560x560.jpg" data-fancybox="group" data-caption="<a class='text-uppercase text-white mb-5 lead' href='https://www.blog-du-voyageur.com/'>Blog du voyageur</a><details class='lead text-white'>Création d'un site internet pour un voyageur</details>" title="Blog du voyageur">
+                <img src="img/photo-3-320x320.jpg" class="img-fluid rounded" alt="Création d'un site internet pour un voyageur" />
+              </a>
+              <div class="mt-5 w-60 mx-auto">
+                <h3 class="text-uppercase h5"> Création d'un site internet pour un voyageur </h3>
+                <p> Les clichés créent par les photographes gardent toutes leurs splendeur sur cette plateforme idéalement conçu par nois soins. </p>
+              </div>
+            </article>
+            <article class="col-md-6 text-center">
+              <a href="img/photo-4-560x560.jpg" data-fancybox="group" data-caption="<a class='text-uppercase text-white mb-5 lead' href='https://www.agence-mariage.com/'>Agence Mariage</a><details class='lead text-white'>Conception d'un site pour une agence de mariage</details>" title="Agence Mariage">
+                <img src="img/photo-4-320x320.jpg" class="img-fluid rounded" alt="Conception d'un site pour une agence de mariage" />
+              </a>
+              <div class="mt-5 w-60 mx-auto">
+                <h3 class="text-uppercase h5"> Conception d'un site pour une agence de mariage </h3>
+                <p> Vos mariages sont les priorités pour cette agence. C'est pourquoi, nous travaillons avec eux afin qu'ils puissent vous proposer les meilleurs présentation détaillée de leur prestations sur leur site internet. </p>
+              </div>
+            </article>
+        </div>
+        </section>
+ <!--
 				*	- Suppressions de l'image de texture / incorporation de l'effet de texture sur l'image via Photoshop
 				*	- Ajout d'une balise sémantique <section>
 				*
 				*
 				-->
-			<div class="bloc bgc-dark-slate-blue bg-banniere d-bloc" id="bloc-5-cta">
-				<div class="container">
-					<div class="row py-5">
-						<div class="col-sm-12 text-center">
-							<p class="text-center tc-white lead">Prêt pour redonner vie à votre projet ?<br>Contactez notre équipe !</p>
-							<a href="contact.html" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Contact</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--
+      <section class="bg-banniere bloc-fixed">
+        <div class="container py-8">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <h2 class="lead-3 text-white mb-5"> Prêt pour redonner vie à votre projet ?<br />Contactez notre équipe ! </h2>
+              <a class="btn btn-clean rounded-pill p-3 btn-chouette text-uppercase" href="contact.html" >Contact</a >
+            </div>
+          </div>
+        </div>
+      </section>
+<!--
 			*	- Ajouter d'une balise sémantique <footer>
-			*	- 
-			*
-			*
+			*	- Suppression des listes d'annuaire. Inutile pour référencement. Concidéré comme du hack SEO
+			*	- Ajout d'une balise <nav> à la place des <div>
+			*	- Grosse suppression des <div> en trop
+			*	- Suppression des keyword. Concidéré comme du hack SEO
+			*	- Remplacement des <span> par des <i>
+			*	- Modifications des liens pour les réseaux sociaux (ajout de lien basique "www.site.com/la-chouette-agence")
+			*	- Ajout d'un copyright ©
+			*	- Suppression des lien vers les autre sites => Ils ne correspondent pas au domaines du site et le mettre dans un footer n'est pas bon. Autant faire une page "Partenariat"
 			-->
-			<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
-				<div class="container bloc-sm">
-					<div class="row text-center mb-5">
-						<div class="col">
-							<h2 class="h2 text-white">La chouette agence</h2>
-							<h3 class="text-sm">Agence web basée à Lyon</h3>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-12">
-							<div class="row social">
-								<div class="col-sm-3">
-									<div class="text-center">
-										<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="text-center">
-										<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="text-center">
-										<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="text-center">
-										<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
-									</div>
-								</div>
-								<div class="keywords" style="color:#F3976C;">Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-4">
-									Partenaires
-										<ul>
-											<li><a href="voiture.com">voiture.com</a></li>
-											<li><a href="pizza.com">pizza.com</a></li>
-											<li><a href="matoiture.com">matoiture.com</a></li>
-											<li><a href="immobilierseo.com">immobilierseo.com</a></li>
-										</ul>		
-								</div>
-								<div class="col-sm-4">
-									Annuaires liste 1
-									<ul>
-										<li><a href="annuaireagence.com">annuaireagence.com</a></li>
-										<li><a href="annuaireseo.com">annuaireseo.com</a></li>
-										<li><a href="annuairemarketing.com">annuairemarketing.com</a></li>
-										<li><a href="123seoture.com">123seo.com</a></li>
-										<li><a href="123site.com">123site.com</a></li>
-										<li><a href="annuairewordpress.com">annuairewordpress.com</a></li>
-										<li><a href="listeagence.com">listeagence.com</a></li>
-										<li><a href="meilleuresagencesparis.com">meilleuresagencesparis.com</a></li>
-										<li><a href="listeseo.com">listeseo.com</a></li>
-									</ul>
-								</div>
-								<div class="col-sm-4">
-									Annuaires liste 2
-									<ul>
-										<li><a href="betterseo.com">betterseo.com</a></li>
-										<li><a href="ameliorerseo.com">ameliorerseo.com</a></li>
-										<li><a href="seojuicelien.com">seojuicelien.com</a></li>
-										<li><a href="meilleursliens.com">meilleursliens.com</a></li>
-										<li><a href="liensagogo.com">liensagogo.com</a></li>
-										<li><a href="backlink.com">backlink.com</a></li>
-										<li><a href="linkjuiceannuaire.com">linkjuiceannuaire.com</a></li>
-										<li><a href="remontersurgoogle.com">remontersurgoogle.com</a></li>
-										<li><a href="vraiseofiable.com">vraiseofiable.com</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		<main>
-	</body>
+      <footer class="bg-chouette" itemscope="" itemtype="https://schema.org/WPFooter">
+        <div class="container py-5">
+          <div class="row text-center align-items-center">
+            <div class="col-md-6 text-center my-3">
+              <h2 class="lead-2">
+              <a href="index.html" class="text-chouette">La Chouette Agence</a><br /><span class="lead">Agence web basée à Lyon</span></h2>
+            </div>
+            <div class="col-md-6 text-center my-3">
+            <p class="lead">Suivez-nous sur nos réseaux sociaux</p>
+            <nav class="nav justify-content-center" itemscope="" itemtype="https://schema.org/SiteNavigationElement">
+              <a class="nav-link text-chouette h3"   href="www.twitter.com/la-chouette-agence"   title="Lien vers Twitter">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a class="nav-link text-chouette h3"   href="www.facebook.com/la-chouette-agence"   title="Lien vers Facebook">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a class="nav-link text-chouette h3"   href="www.dribbble.com/la-chouette-agence"   title="Lien vers Dribbble">
+                <i class="fa fa-dribbble"></i>
+              </a>
+              <a class="nav-link text-chouette h3"   href="www.instagram.com/la-chouette-agence"   title="Lien vers Instagram">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </nav>
+            <p class="lead">Ou contacter notre équipe :</p>
+            <a href="contact.html" class="btn btn-chouette-footer rounded-pill p-3 text-uppercase">Parlons de votre projet</a>
+            </div>
+          </div>
+          <div class="row text-center mt-5">
+            <p class="col-md-12 text-white"> © 2020 <a href="index.html" title="Lien vers La Chouette Agence" class="text-light" >La Chouette Agence</a >. <a href="" title="Lien vers mentions légales" class="text-light" >Mentions légales</a >. Réalisation : <a href="index.html" title="Lien vers La Chouette Agence" class="text-light" > La Chouette Agence</a >.</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
 </html>

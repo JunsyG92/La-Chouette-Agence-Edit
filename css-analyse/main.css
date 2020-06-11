@@ -1,0 +1,34 @@
+.dot p {
+    margin: 0 50px;
+}
+.dot p:nth-child(1) span {
+    background-color: #9C6C3F;
+    transform: scale(1);
+    transition-duration: .3s;
+}
+.dot p:nth-child(2) span {
+    background-color: #634427;
+    transform: scale(1);
+    transition-duration: .3s;
+}
+.dot p:nth-child(3) span {
+    background-color: #212529;
+    transform: scale(1);
+    transition-duration: .3s;
+}
+.dot p:nth-child(4) span {
+    background-color: #FFFFFF;
+    transform: scale(1);
+    transition-duration: .3s;
+}
+.dot p span:hover {
+    transform: scale(1.3);
+    transition-duration: .3s;
+}
+.dot p span {
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin: 5px 0;
+    border-radius: 50%;
+}
