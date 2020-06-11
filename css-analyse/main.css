@@ -1,31 +1,28 @@
-.dot p {
-    margin: 0 50px;
-}
-.dot p:nth-child(1) span {
+.dot div:nth-child(1) p span {
     background-color: #9C6C3F;
     transform: scale(1);
     transition-duration: .3s;
 }
-.dot p:nth-child(2) span {
+.dot div:nth-child(2) p span {
     background-color: #634427;
     transform: scale(1);
     transition-duration: .3s;
 }
-.dot p:nth-child(3) span {
+.dot div:nth-child(3) p span {
     background-color: #212529;
     transform: scale(1);
     transition-duration: .3s;
 }
-.dot p:nth-child(4) span {
+.dot div:nth-child(4) p span {
     background-color: #FFFFFF;
     transform: scale(1);
     transition-duration: .3s;
 }
-.dot p span:hover {
+.dot div p span:hover {
     transform: scale(1.3);
     transition-duration: .3s;
 }
-.dot p span {
+.dot div p span {
     display: block;
     width: 70px;
     height: 70px;
