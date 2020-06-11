@@ -3,7 +3,7 @@
   <head itemscope="" itemtype="https://schema.org/WebSite">
     <meta charset="UTF-8" />
     <meta name="keywords" content="Accueil La Chouette Agence, Chouette Agence, Chouette, Agence web, Lyon, Agence web Lyon, Digital, Stratégie, Site internet, Site web, Web, Création de site web, Design, Création de design, Création de maquette web, Maquette web,"/>
-    <meta name="description" content="La Chouette Agence, créateur de site web et d'identité visuelle pour professionnel. Nous vous aidons à programmer une statégie digital pour une meilleur visibilité de votre entreprise sur internet. Que vous ayez déjà une base ou non, nous nous adapterons à votre entreprise afin de maximiser vos résultats !"/>
+    <meta name="description" content="Le meilleur de l'optimisation pour le SEO et l'accessibilité du site La Chouette Agence. Retrouvez des bases de stratégies afin de positionner votre site en top liste chez Google."/>
     <meta name="robots" content="index, follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
@@ -17,6 +17,7 @@
     <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script defer src="https://kit.fontawesome.com/69d9156c55.js" crossorigin="anonymous"></script>
+    <script defer src="js-analyse/main.js"></script>
     <title>La Chouette Agence - Analyse de l'accessibilité et du SEO</title>
   </head>
   <body>
@@ -31,7 +32,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
+            <div class="navbar-nav" itemscope="" itemtype="https://schema.org/Menu">
               <a class="" href="mailto:mathieu.nesseir@gmail.com" title="Page de contact" >Contacter le développeur</a>
             </div>
           </div>
@@ -53,93 +54,95 @@
         </div>
       </section>
 
-      <section class="container py-10">
+      <section class="container py-10" id="top">
         <div class="row">
           <div id="accordion" class="col-lg-3 col-md-12 col-sm-12 mb-5">
-            <div class="card border-0 bg-transparent">
-              <div class="card-header border-0 bg-transparent" id="headingOne">
-                <h3 class="mb-0">
-                  <button class="border-0 bg-transparent" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >Accessibilités</button>
-                </h3>
+            <div class="sticky-top">
+              <div class="card border-0 bg-transparent">
+                <div class="card-header border-0 bg-transparent" id="headingOne">
+                  <h3 class="mb-0">
+                    <button class="border-0 bg-transparent" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >Accessibilités</button>
+                  </h3>
+                </div>
               </div>
-            </div>
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-              <div class="card-body"> 
-                <ul class="nav nav-tabs border-0 flex-column" id="myTab" role="tablist">  
-                  <li class="nav-item">
-                    <a class="nav-link active border-0" id="couleurs-tab" data-toggle="tab" href="#couleurs" role="tab" aria-controls="couleurs" aria-selected="true">Couleurs</a>   
-                  </li>   
-                  <li class="nav-item"> 
-                    <a class="nav-link border-0" id="design-tab" data-toggle="tab" href="#design" role="tab" aria-controls="design" aria-selected="false">Design</a>   
-                  </li>   
-                  <li class="nav-item"> 
-                    <a class="nav-link border-0" id="header-tab" data-toggle="tab" href="#header" role="tab" aria-controls="header" aria-selected="false" >Header</a>   
-                  </li>   
-                  <li class="nav-item"> 
-                    <a class="nav-link border-0" id="footer-tab" data-toggle="tab" href="#footer" role="tab" aria-controls="footer" aria-selected="false" >Footer</a>   
-                  </li>   
-                  <li class="nav-item"> 
-                    <a class="nav-link border-0" id="paragraphe-tab" data-toggle="tab" href="#paragraphe" role="tab" aria-controls="paragraphe" aria-selected="false" >Contenu</a>   
-                  </li>   
-                  <li class="nav-item">
-                    <a class="nav-link border-0" id="responsive-tab" data-toggle="tab" href="#responsive" role="tab" aria-controls="responsive" aria-selected="false" >Responsive</a>   
-                  </li>   
-                  <li class="nav-item"> 
-                    <a class="nav-link border-0" id="fancybox-tab" data-toggle="tab" href="#fancybox" role="tab" aria-controls="fancybox" aria-selected="false" >Images</a>   
-                  </li>   
-                  <li class="nav-item"> 
-                    <a class="nav-link border-0" id="formulaire-tab" data-toggle="tab" href="#formulaire" role="tab" aria-controls="formulaire" aria-selected="false" >Formulaire</a>   
-                  </li>   
-                  <li class="nav-item"> 
-                    <a class="nav-link border-0" id="vitesse-tab" data-toggle="tab" href="#vitesse" role="tab" aria-controls="vitesse" aria-selected="false" >Vitesse du site</a>   
-                  </li>   
-                  <li class="nav-item"> 
-                    <a class="nav-link border-0" id="code-tab" data-toggle="tab" href="#code" role="tab" aria-controls="code" aria-selected="false" >Le code</a>   
-                  </li> 
-                </ul>
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body"> 
+                  <ul class="nav nav-tabs border-0 flex-column" id="myTab" role="tablist">  
+                    <li class="nav-item">
+                      <a class="nav-link active border-0" id="couleurs-tab" data-toggle="tab" href="#couleurs" role="tab" aria-controls="couleurs" aria-selected="true">Couleurs</a>   
+                    </li>   
+                    <li class="nav-item"> 
+                      <a class="nav-link border-0" id="design-tab" data-toggle="tab" href="#design" role="tab" aria-controls="design" aria-selected="false">Design</a>   
+                    </li>   
+                    <li class="nav-item"> 
+                      <a class="nav-link border-0" id="header-tab" data-toggle="tab" href="#header" role="tab" aria-controls="header" aria-selected="false" >Header</a>   
+                    </li>   
+                    <li class="nav-item"> 
+                      <a class="nav-link border-0" id="footer-tab" data-toggle="tab" href="#footer" role="tab" aria-controls="footer" aria-selected="false" >Footer</a>   
+                    </li>   
+                    <li class="nav-item"> 
+                      <a class="nav-link border-0" id="paragraphe-tab" data-toggle="tab" href="#paragraphe" role="tab" aria-controls="paragraphe" aria-selected="false" >Contenu</a>   
+                    </li>   
+                    <li class="nav-item">
+                      <a class="nav-link border-0" id="responsive-tab" data-toggle="tab" href="#responsive" role="tab" aria-controls="responsive" aria-selected="false" >Responsive</a>   
+                    </li>   
+                    <li class="nav-item"> 
+                      <a class="nav-link border-0" id="fancybox-tab" data-toggle="tab" href="#fancybox" role="tab" aria-controls="fancybox" aria-selected="false" >Images</a>   
+                    </li>   
+                    <li class="nav-item"> 
+                      <a class="nav-link border-0" id="formulaire-tab" data-toggle="tab" href="#formulaire" role="tab" aria-controls="formulaire" aria-selected="false" >Formulaire</a>   
+                    </li>   
+                    <li class="nav-item"> 
+                      <a class="nav-link border-0" id="vitesse-tab" data-toggle="tab" href="#vitesse" role="tab" aria-controls="vitesse" aria-selected="false" >Vitesse du site</a>   
+                    </li>   
+                    <li class="nav-item"> 
+                      <a class="nav-link border-0" id="code-tab" data-toggle="tab" href="#code" role="tab" aria-controls="code" aria-selected="false" >Le code</a>   
+                    </li> 
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div class="card border-0 bg-transparent">
-              <div class="card-header border-0 bg-transparent" id="headingTwo"> 
-                <h5 class="mb-0">   
-                  <button class="border-0 bg-transparent collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> SEO</button> 
-                </h5>
+              <div class="card border-0 bg-transparent">
+                <div class="card-header border-0 bg-transparent" id="headingTwo"> 
+                  <h5 class="mb-0">   
+                    <button class="border-0 bg-transparent collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> SEO</button> 
+                  </h5>
+                </div>
               </div>
-            </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-              <div class="card-body"> 
-                <ul class="nav nav-tabs border-0 flex-column" id="SeoTab" role="tablist" >   
-                  <li class="nav-item"> 
-                    <a class="nav-link border-0" id="meta-tab" data-toggle="tab" href="#meta" role="tab" aria-controls="meta" aria-selected="false" >Balises meta & schema</a>   
-                  </li>   
-                  <li class="nav-item"> 
-                    <a class="nav-link border-0" id="robots-tab" data-toggle="tab" href="#robots" role="tab" aria-controls="robots" aria-selected="false" >Google robots</a>   
-                  </li>   
-                  <li class="nav-item"> 
-                    <a class="nav-link border-0" id="mots-cles-tab" data-toggle="tab" href="#mots-cles" role="tab" aria-controls="mots-cles" aria-selected="false" >Mots-clés</a>   
-                  </li>   
-                  <li class="nav-item"> 
-                    <a class="nav-link border-0" id="hack-tab" data-toggle="tab" href="#hack" role="tab" aria-controls="hack" aria-selected="false" >Hack code</a>   
-                  </li>   
-                  <li class="nav-item"> 
-                    <a class="nav-link border-0" id="semantique-tab" data-toggle="tab" href="#semantique" role="tab" aria-controls="semantique" aria-selected="false" >HTML semantique</a>   
-                  </li>   
-                  <li class="nav-item"> 
-                    <a class="nav-link border-0" id="titres-tab" data-toggle="tab" href="#titres" role="tab" aria-controls="titres" aria-selected="false" >Les titres</a>   
-                  </li>   
-                  <li class="nav-item"> 
-                    <a class="nav-link border-0" id="attributs-tab" data-toggle="tab" href="#attributs" role="tab" aria-controls="attributs" aria-selected="false" >Les attributs</a>   
-                  </li>   
-                  <li class="nav-item"> 
-                    <a class="nav-link border-0" id="interne-tab" data-toggle="tab" href="#interne" role="tab" aria-controls="interne" aria-selected="false" >Les liens internes</a>   
-                  </li>   
-                  <li class="nav-item"> 
-                    <a class="nav-link border-0" id="externe-tab" data-toggle="tab" href="#externe" role="tab" aria-controls="externe" aria-selected="false" >Les liens externes</a>   
-                  </li>   
-                  <li class="nav-item"> 
-                    <a class="nav-link border-0" id="rapidite-tab" data-toggle="tab" href="#rapidite" role="tab" aria-controls="rapidite" aria-selected="false" >Rapidité du site</a>   
-                  </li> 
-                </ul>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body"> 
+                  <ul class="nav nav-tabs border-0 flex-column" id="SeoTab" role="tablist" >   
+                    <li class="nav-item"> 
+                      <a class="nav-link border-0" id="meta-tab" data-toggle="tab" href="#meta" role="tab" aria-controls="meta" aria-selected="false" >Balises meta & schema</a>   
+                    </li>   
+                    <li class="nav-item"> 
+                      <a class="nav-link border-0" id="robots-tab" data-toggle="tab" href="#robots" role="tab" aria-controls="robots" aria-selected="false" >Google robots</a>   
+                    </li>   
+                    <li class="nav-item"> 
+                      <a class="nav-link border-0" id="mots-cles-tab" data-toggle="tab" href="#mots-cles" role="tab" aria-controls="mots-cles" aria-selected="false" >Mots-clés</a>   
+                    </li>   
+                    <li class="nav-item"> 
+                      <a class="nav-link border-0" id="hack-tab" data-toggle="tab" href="#hack" role="tab" aria-controls="hack" aria-selected="false" >Hack code</a>   
+                    </li>   
+                    <li class="nav-item"> 
+                      <a class="nav-link border-0" id="semantique-tab" data-toggle="tab" href="#semantique" role="tab" aria-controls="semantique" aria-selected="false" >HTML semantique</a>   
+                    </li>   
+                    <li class="nav-item"> 
+                      <a class="nav-link border-0" id="titres-tab" data-toggle="tab" href="#titres" role="tab" aria-controls="titres" aria-selected="false" >Les titres</a>   
+                    </li>   
+                    <li class="nav-item"> 
+                      <a class="nav-link border-0" id="attributs-tab" data-toggle="tab" href="#attributs" role="tab" aria-controls="attributs" aria-selected="false" >Les attributs</a>   
+                    </li>   
+                    <li class="nav-item"> 
+                      <a class="nav-link border-0" id="interne-tab" data-toggle="tab" href="#interne" role="tab" aria-controls="interne" aria-selected="false" >Les liens internes</a>   
+                    </li>   
+                    <li class="nav-item"> 
+                      <a class="nav-link border-0" id="externe-tab" data-toggle="tab" href="#externe" role="tab" aria-controls="externe" aria-selected="false" >Les liens externes</a>   
+                    </li>   
+                    <li class="nav-item"> 
+                      <a class="nav-link border-0" id="rapidite-tab" data-toggle="tab" href="#rapidite" role="tab" aria-controls="rapidite" aria-selected="false" >Rapidité du site</a>   
+                    </li> 
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -147,7 +150,7 @@
             <div class="tab-content" id="myTabContent">
               <!-- Repére : #ACS-1 -->
               <div class="tab-pane fade show active" id="couleurs" role="tabpanel" aria-labelledby="couleurs-tab">
-                <article>
+                <article itemscope="" itemtype="https://schema.org/Article">
                   <div class="article-header"> 
                     <h3 class="display-4">Les couleurs</h3>
                     <p class="text-muted lead mt-5">Pour l'accessibilité du site pour tous, le choix des couleurs est importante ! Nous ne percevons pas tous les couleurs de la même manière et, c'est pourquoi, je vous propose une nouvelle palettes de couleurs pour le design du site.</p>
@@ -197,29 +200,29 @@
                         <div class="row my-5">
                           <div class="col-md-6 mb-3">
                             <a href="img-analyse/image(2).png" data-fancybox="group" data-caption="<p class='lead'>Couleurs Standard</p>" title="Couleurs Standard">
-                              <img src="img-analyse/petit/image(2).png" class="img-fluid rounded" alt="Couleurs Standard images"/>
+                              <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(2).png" class="img-fluid rounded" alt="Couleurs Standard images"/>
                             </a>
                           </div>
                           <div class="col-md-6 mb-3">
                             <div class="row">
-                              <div class="col-md-6 mb-3">
+                              <div class="col-6 mb-3">
                                 <a href="img-analyse/image(3).png" data-fancybox="group" data-caption="<p class='lead'>Couleurs Protanope</p>" title="Couleurs Protanope">
-                                  <img src="img-analyse/petit/image(3).png" class="img-fluid rounded" alt="Couleurs Protanope images"/>
+                                  <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(3).png" class="img-fluid rounded" alt="Couleurs Protanope images"/>
                                 </a>
                               </div>
-                              <div class="col-md-6 mb-3">
+                              <div class="col-6 mb-3">
                                 <a href="img-analyse/image(4).png" data-fancybox="group" data-caption="<p class='lead'>Couleurs Deuteranope</p>" title="Couleurs Deuteranope">
-                                  <img src="img-analyse/petit/image(4).png" class="img-fluid rounded" alt="Couleurs Deuteranope images"/>
+                                  <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(4).png" class="img-fluid rounded" alt="Couleurs Deuteranope images"/>
                                 </a>
                               </div>
-                              <div class="col-md-6 mb-3">
+                              <div class="col-6 mb-3">
                                 <a href="img-analyse/image(5).png" data-fancybox="group" data-caption="<p class='lead'>Couleurs Tritanope</p>" title="Couleurs Tritanope">
-                                  <img src="img-analyse/petit/image(5).png" class="img-fluid rounded" alt="Couleurs Tritanope images"/>
+                                  <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(5).png" class="img-fluid rounded" alt="Couleurs Tritanope images"/>
                                 </a>
                               </div>
-                              <div class="col-md-6">
+                              <div class="col-6">
                                 <a href="img-analyse/image(6).png" data-fancybox="group" data-caption="<p class='lead'>Couleurs Niveaux de gris</p>" title="Couleurs Niveaux de gris">
-                                  <img src="img-analyse/petit/image(6).png" class="img-fluid rounded" alt="Couleurs Niveaux de gris images"/>
+                                  <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(6).png" class="img-fluid rounded" alt="Couleurs Niveaux de gris images"/>
                                 </a>
                               </div>
                               </div>
@@ -229,31 +232,31 @@
                           <div class="row my-5">
                             <div class="col-md-6 mb-3">
                               <div class="row">
-                                <div class="col-md-6 mb-3">
+                                <div class="col-6 mb-3">
                                   <a href="img-analyse/image(7).png" data-fancybox="group" data-caption="<p class='lead'>Couleurs Standard Inversée</p>" title="Couleurs Standard Inversée">
-                                    <img src="img-analyse/petit/image(7).png" class="img-fluid rounded" alt="Couleurs Standard inversée images"/>
+                                    <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(7).png" class="img-fluid rounded" alt="Couleurs Standard inversée images"/>
                                   </a>
                                 </div>
-                                <div class="col-md-6 mb-3">
+                                <div class="col-6 mb-3">
                                   <a href="img-analyse/image(8).png" data-fancybox="group" data-caption="<p class='lead'>Couleurs Protanope Inversée</p>" title="Couleurs Protanope Inversée">
-                                    <img src="img-analyse/petit/image(8).png" class="img-fluid rounded" alt="Couleurs Protanope inversée images"/>
+                                    <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(8).png" class="img-fluid rounded" alt="Couleurs Protanope inversée images"/>
                                   </a>
                                 </div>
-                                <div class="col-md-6 mb-3">
+                                <div class="col-6 mb-3">
                                   <a href="img-analyse/image(9).png" data-fancybox="group" data-caption="<p class='lead'>Couleurs Deuteranope Inversée</p>" title="Couleurs Deuteranope Inversée">
-                                    <img src="img-analyse/petit/image(9).png" class="img-fluid rounded" alt="Couleurs Deuteranope inversée images"/>
+                                    <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(9).png" class="img-fluid rounded" alt="Couleurs Deuteranope inversée images"/>
                                   </a>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-6 ">
                                   <a href="img-analyse/image(10).png" data-fancybox="group" data-caption="<p class='lead'>Couleurs Tritanope Inversée</p>" title="Couleurs Tritanope Inversée">
-                                    <img src="img-analyse/petit/image(10).png" class="img-fluid rounded" alt="Couleurs Tritanope inversée images"/>
+                                    <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(10).png" class="img-fluid rounded" alt="Couleurs Tritanope inversée images"/>
                                   </a>
                                 </div>
                               </div>
                             </div>
                             <div class="col-md-6">
                               <a href="img-analyse/image(11).png" data-fancybox="group" data-caption="<p class='lead'>Couleurs Niveaux de gris Inversée</p>" title="Couleurs Niveaux de gris Inversée">
-                                <img src="img-analyse/petit/image(11).png" class="img-fluid rounded" alt="Couleurs Niveaux de gris inversée images"/>
+                                <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(11).png" class="img-fluid rounded" alt="Couleurs Niveaux de gris inversée images"/>
                               </a>
                             </div>
                           </div>
@@ -273,7 +276,7 @@
               </div>
               <div class="tab-pane fade" id="design" role="tabpanel" aria-labelledby="design-tab">
                  <!-- Repére : #ACS-2 --> 
-                <article>   
+                <article itemscope="" itemtype="https://schema.org/Article">   
                   <div class="article-header"> 
                     <h3 class="display-4">Le design</h3> 
                     <p class="text-muted lead mt-5">Un site avec un design fluide et cohérent augmente la confiance que vous pouvez avoir avec vos prospect. Si celui-ci est mal présenté, vos possible prospect n'auront pas confiance en vous et aux services que vous proposez.</p>
@@ -296,19 +299,19 @@
                       <div class="row">
                         <div class="col-md-6 mb-3">
                           <a href="img-analyse/image(66).png" data-fancybox="design" data-caption="<p class='lead'>Présentation de la galerie en format Desktop</p>" title="La galerie sur un ordinateur">
-                            <img src="img-analyse/petit/image(66).png" class="img-fluid rounded" alt="Visuel des liens vers les images" />
+                            <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(66).png" class="img-fluid rounded" alt="Visuel des liens vers les images" />
                           </a>
                         </div>
                         <div class="col-md-6 mb-3">
                           <div class="row">
                             <div class="col-md-12 mb-3">
                               <a href="img-analyse/image(65).png" data-fancybox="design" data-caption="<p class='lead'>Visuel au click d'une des images grands format</p>" title="Le visuel au click de la galerie">
-                                <img src="img-analyse/petit/image(65).png" class="img-fluid rounded" alt="Le visuel au click de la galerie"/>
+                                <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(65).png" class="img-fluid rounded" alt="Le visuel au click de la galerie"/>
                               </a>
                             </div>
                             <div class="col-md-12 mb-3">
                               <a href="img-analyse/image(67).png" data-fancybox="design" data-caption="<p class='lead'>Visuel au click d'une des images petits format</p>" title="">
-                                <img src="img-analyse/petit/image(67).png" class="img-fluid rounded" alt="Lien vers l'"/>
+                                <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(67).png" class="img-fluid rounded" alt="Lien vers l'"/>
                               </a>
                             </div>
                           </div>
@@ -326,19 +329,19 @@
                           <div class="row">
                             <div class="col-md-12 mb-3">
                               <a href="img-analyse/image(68).png" data-fancybox="design" data-caption="<p class='lead'>Affichage de la galerie sur version ordianteur avec Fancybox</p>" title="Fancybox, visuel de la galerie sur ordinateur">
-                                <img src="img-analyse/petit/image(68).png" class="img-fluid rounded" alt="Fancybox, visuel de la galerie sur ordinateur"/>
+                                <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(68).png" class="img-fluid rounded" alt="Fancybox, visuel de la galerie sur ordinateur"/>
                               </a>
                             </div>
                             <div class="col-md-12 mb-3">
                               <a href="img-analyse/image(70).png" data-fancybox="design" data-caption="<p class='lead'>Possibilité d'avoir une liste des images en attentes avec Fancybox</p>" title="Fancybox, visuel de la navigation">
-                                <img src="img-analyse/petit/image(70).png" class="img-fluid rounded" alt="Fancybox, visuel de la navigation"/>
+                                <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(70).png" class="img-fluid rounded" alt="Fancybox, visuel de la navigation"/>
                               </a>
                             </div>
                           </div>
                         </div>
                         <div class="col-md-6 mb-3">
                           <a href="img-analyse/image(69).png" data-fancybox="design" data-caption="<p class='lead'>Design Fancybox</p>" title="Fancybox, visuel de l'image">
-                            <img src="img-analyse/petit/image(69).png" class="img-fluid rounded" alt="Fancybox, visuel de l'image" />
+                            <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(69).png" class="img-fluid rounded" alt="Fancybox, visuel de l'image" />
                           </a>
                         </div>
                       </div>
@@ -354,7 +357,7 @@
               </div>
               <div class="tab-pane fade" id="header" role="tabpanel" aria-labelledby="header-tab">
                  <!-- Repére : #ACS-3 --> 
-                <article>   
+                <article itemscope="" itemtype="https://schema.org/Article">   
                   <div class="article-header"> 
                     <h3 class="display-4">Le header</h3> 
                     <p class="text-muted lead mt-5">L'en-tête de page est une des partie les plus importantes pour un site. Elle permet d'avoir une agréable expérience utilisateur si, celui-ci, est bien présenté. Que ce soit sur un Desktop ou un Mobile, le header à sa place.</p>
@@ -382,12 +385,12 @@
                           <div class="row">
                             <div class="col-md-6 mb-3">
                             <a href="img-analyse/image(13).png" data-fancybox="header-base" data-caption="<p class='lead'>Visuel du problème du header en version ordinateur pour la page index.html</p>" title="Image du résultat donnée pour la page index.html sur un ordinateur">
-                              <img src="img-analyse/petit/image(13).png" class="img-fluid rounded" alt="Lien vers l'image du résultat donnée pour la page index.html sur un ordinateur"/>
+                              <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(13).png" class="img-fluid rounded" alt="Lien vers l'image du résultat donnée pour la page index.html sur un ordinateur"/>
                             </a>
                           </div>
                           <div class="col-md-6 mb-3">
                             <a href="img-analyse/image(12).png" data-fancybox="header-base" data-caption="<p class='lead'>Visuel du problème du header en version ordinateur pour la page contact.html</p>" title="">
-                              <img src="img-analyse/petit/image(12).png" class="img-fluid rounded" alt="Lien vers l'"/>
+                              <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(12).png" class="img-fluid rounded" alt="Lien vers l'"/>
                             </a>
                           </div>
                         </div>
@@ -395,12 +398,12 @@
                         <div class="row">
                           <div class="col-md-6 mb-3">
                             <a href="img-analyse/image(14).png" data-fancybox="header-base" data-caption="<p class='lead'>Visuel du problème du header en version mobile pour la page index.html</p>" title="Image du résultat donnée pour la page index.html sur un mobile">
-                              <img src="img-analyse/petit/image(14).png" class="img-fluid rounded" alt="Lien vers l'image du résultat donnée pour la page index.html sur un mobile"/>
+                              <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(14).png" class="img-fluid rounded" alt="Lien vers l'image du résultat donnée pour la page index.html sur un mobile"/>
                             </a>
                           </div>
                           <div class="col-md-6 mb-3">
                             <a href="img-analyse/image(15).png" data-fancybox="header-base" data-caption="<p class='lead'>Visuel du problème du header en version mobile pour la page contact.html</p>" title="Image du résultat donnée pour la page contact.html sur un mobile">
-                              <img src="img-analyse/petit/image(15).png" class="img-fluid rounded" alt="Lien vers l'image du résultat donnée pour la page contact.html sur un mobile"/>
+                              <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(15).png" class="img-fluid rounded" alt="Lien vers l'image du résultat donnée pour la page contact.html sur un mobile"/>
                             </a>
                           </div>
                         </div>
@@ -418,12 +421,12 @@
                       <div class="row align-items-center">
                         <div class="col-md-6 mb-3">
                           <a href="img-analyse/image(17).png" data-fancybox="header-final" data-caption="<p class='lead'>Visuel du résultat final du header en version ordinateur</p>" title="Image du résultat final du header pour la version ordinateur">
-                            <img src="img-analyse/petit/image(17).png" class="img-fluid rounded" alt="Lien vers l'image du résultat final sur un ordinateur" />
+                            <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(17).png" class="img-fluid rounded" alt="Lien vers l'image du résultat final sur un ordinateur" />
                           </a>
                         </div>
                         <div class="col-md-6 mb-3">
                           <a href="img-analyse/image(16).png" data-fancybox="header-final" data-caption="<p class='lead'>Visuel du résultat final du header en version mobile</p>" title="Image du résultat final du header pour la version mobile">
-                            <img src="img-analyse/petit/image(16).png" class="img-fluid rounded" alt="Lien vers l'image du résultat final sur un mobile" />
+                            <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(16).png" class="img-fluid rounded" alt="Lien vers l'image du résultat final sur un mobile" />
                           </a>
                         </div>
                       </div>
@@ -441,7 +444,7 @@
               </div>
               <div class="tab-pane fade" id="footer" role="tabpanel" aria-labelledby="footer-tab">
                  <!-- Repére : #ACS-4 --> 
-                <article>   
+                <article itemscope="" itemtype="https://schema.org/Article">   
                   <div class="article-header"> 
                     <h3 class="display-4">Le footer</h3> 
                     <p class="text-muted lead mt-5">Même si celui-ci n'est pas le plus vue par les utilisateurs, il reste tout aussi important ! C'est ce qui permet de donner un peu plus d'informations sur vous ainsi que sur l'arborescence du site.</p>
@@ -469,12 +472,12 @@
                         <div class="row align-items-center mb-5">
                           <div class="col-md-6 mb-3">
                             <a href="img-analyse/image(21).png" data-fancybox="footer-base" data-caption="<p class='lead'>Visuel du problème du footer en version ordinateur pour la page index.html</p>" title="Image du résultat donnée pour la page index.html sur un ordinateur">
-                              <img src="img-analyse/petit/image(21).png" class="img-fluid rounded" alt="Lien vers l'image du résultat donnée pour la page index.html sur un ordinateur"/>
+                              <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(21).png" class="img-fluid rounded" alt="Lien vers l'image du résultat donnée pour la page index.html sur un ordinateur"/>
                             </a>
                           </div>
                           <div class="col-md-6 mb-3">
                             <a href="img-analyse/image(20).png" data-fancybox="footer-base" data-caption="<p class='lead'>Visuel du problème du footer en version mobile pour la page index.html</p>" title="Image du résultat donnée pour la page index.html sur un mobile">
-                              <img src="img-analyse/petit/image(20).png" class="img-fluid rounded" alt="Lien vers l'image du résultat donnée pour la page index.html sur un mobile"/>
+                              <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(20).png" class="img-fluid rounded" alt="Lien vers l'image du résultat donnée pour la page index.html sur un mobile"/>
                             </a>
                           </div>
                         </div>
@@ -482,12 +485,12 @@
                         <div class="row align-items-center">
                           <div class="col-md-6 mb-3">
                             <a href="img-analyse/image(19).png" data-fancybox="footer-base" data-caption="<p class='lead'>Visuel du problème du footer en version ordinateur pour la page contact.html</p>" title="">
-                              <img src="img-analyse/petit/image(19).png" class="img-fluid rounded" alt="Lien vers l'image du résultat donnée pour la page index.html sur un ordinateur"/>
+                              <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(19).png" class="img-fluid rounded" alt="Lien vers l'image du résultat donnée pour la page index.html sur un ordinateur"/>
                             </a>
                           </div>
                           <div class="col-md-6 mb-3">
                             <a href="img-analyse/image(18).png" data-fancybox="footer-base" data-caption="<p class='lead'>Visuel du problème du footer en version mobile pour la page contact.html</p>" title="Image du résultat donnée pour la page contact.html sur un mobile">
-                              <img src="img-analyse/petit/image(18).png" class="img-fluid rounded" alt="Lien vers l'image du résultat donnée pour la page contact.html sur un mobile"/>
+                              <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(18).png" class="img-fluid rounded" alt="Lien vers l'image du résultat donnée pour la page contact.html sur un mobile"/>
                             </a>
                           </div>
                         </div>
@@ -506,12 +509,12 @@
                       <div class="row align-items-center">
                         <div class="col-md-6 mb-3">
                           <a href="img-analyse/image(22).png" data-fancybox="footer-final" data-caption="<p class='lead'>Visuel du résultat final du footer en version ordinateur</p>" title="Image du résultat final du footer pour la version ordinateur">
-                            <img src="img-analyse/petit/image(22).png" class="img-fluid rounded" alt="Lien vers l'image du résultat final sur un ordinateur" />
+                            <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(22).png" class="img-fluid rounded" alt="Lien vers l'image du résultat final sur un ordinateur" />
                           </a>
                         </div>
                         <div class="col-md-6 mb-3">
                           <a href="img-analyse/image(23).png" data-fancybox="footer-final" data-caption="<p class='lead'>Visuel du résultat final du footer en version mobile</p>" title="Image du résultat final du footer pour la version mobile">
-                            <img src="img-analyse/petit/image(23).png" class="img-fluid rounded" alt="Lien vers l'image du résultat final sur un mobile" />
+                            <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(23).png" class="img-fluid rounded" alt="Lien vers l'image du résultat final sur un mobile" />
                           </a>
                         </div>
                       </div>
@@ -528,7 +531,7 @@
               </div>
               <div class="tab-pane fade" id="paragraphe" role="tabpanel" aria-labelledby="paragraphe-tab">
                  <!-- Repére : #ACS-5 --> 
-                <article>   
+                <article itemscope="" itemtype="https://schema.org/Article">   
                   <div class="article-header"> 
                     <h3 class="display-4">Le contenu</h3> 
                     <p class="text-muted lead mt-5"></p>   
@@ -552,29 +555,29 @@
                       <div class="row align-items-center">
                         <div class="col-md-4 mb-3">
                           <a href="img-analyse/image(32).png" data-fancybox="paragraphes" data-caption="<p class='lead'>Une description trop petite</p>" title="Problème de lisibilité">
-                            <img src="img-analyse/petit/image(32).png" class="img-fluid rounded" alt="Problème de lisibilité en image" />
+                            <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(32).png" class="img-fluid rounded" alt="Problème de lisibilité en image" />
                           </a>
                         </div>
                         <div class="col-md-8 mb-3">
                           <div class="row">
                             <div class="col-md-6 mb-3">
                               <a href="img-analyse/image(30).png" data-fancybox="paragraphes" data-caption="<p class='lead'>Un problème de lisibilté dû à la couleur et à la taille des caractères</p>" title="Problème de lisibilité">
-                                <img src="img-analyse/petit/image(30).png" class="img-fluid rounded" alt="Problème de lisibilité en image"/>
+                                <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(30).png" class="img-fluid rounded" alt="Problème de lisibilité en image"/>
                               </a>
                             </div>
                             <div class="col-md-6 mb-3">
                               <a href="img-analyse/image(31).png" data-fancybox="paragraphes" data-caption="<p class='lead'>Une image qui remplace le contenu</p>" title="Problème de performance et d'optimisation SEO">
-                                <img src="img-analyse/petit/image(31).png" class="img-fluid rounded" alt="Problème de performance et d'optimisation SEO en image"/>
+                                <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(31).png" class="img-fluid rounded" alt="Problème de performance et d'optimisation SEO en image"/>
                               </a>
                             </div>
                             <div class="col-md-6 mb-3">
                               <a href="img-analyse/image(33).png" data-fancybox="paragraphes" data-caption="<p class='lead'>Des informations de contact trop petit</p>" title="Problème de lisibilité">
-                                <img src="img-analyse/petit/image(33).png" class="img-fluid rounded" alt="Problème de lisibilité en image"/>
+                                <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(33).png" class="img-fluid rounded" alt="Problème de lisibilité en image"/>
                               </a>
                             </div>
                             <div class="col-md-6">
                               <a href="img-analyse/image(29).png" data-fancybox="paragraphes" data-caption="<p class='lead'>Un problème de lisibilté dû à la couleur et à la taille des caractères</p>" title="Problème de lisibilité">
-                                <img src="img-analyse/petit/image(29).png" class="img-fluid rounded" alt="Problème de lisibilité en image"/>
+                                <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(29).png" class="img-fluid rounded" alt="Problème de lisibilité en image"/>
                               </a>
                             </div>
                           </div>
@@ -593,29 +596,29 @@
                           <div class="row">
                             <div class="col-md-6 mb-3">
                               <a href="img-analyse/image(35).png" data-fancybox="paragraphes" data-caption="<p class='lead'>Une meilleur comphérension de l'information grâce à sa couleurs et sa taille de caractères</p>" title="Solution de lisibilité">
-                                <img src="img-analyse/petit/image(35).png" class="img-fluid rounded" alt="Solution de lisibilité en image"/>
+                                <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(35).png" class="img-fluid rounded" alt="Solution de lisibilité en image"/>
                               </a>
                             </div>
                             <div class="col-md-6 mb-3">
                               <a href="img-analyse/image(36).png" data-fancybox="paragraphes" data-caption="<p class='lead'>Une solution pour à la couleur et à la taille des caractères</p>" title="Solution de lisibilité">
-                                <img src="img-analyse/petit/image(36).png" class="img-fluid rounded" alt="Solution de lisibilité en image"/>
+                                <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(36).png" class="img-fluid rounded" alt="Solution de lisibilité en image"/>
                               </a>
                             </div>
                             <div class="col-md-6 mb-3">
                               <a href="img-analyse/image(37).png" data-fancybox="paragraphes" data-caption="<p class='lead'>Un contenu rédigé proprement dans le code</p>" title="Solution de performance et d'optimisation SEO">
-                                <img src="img-analyse/petit/image(37).png" class="img-fluid rounded" alt="Solution de performance et d'optimisation SEO en image"/>
+                                <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(37).png" class="img-fluid rounded" alt="Solution de performance et d'optimisation SEO en image"/>
                               </a>
                             </div>
                             <div class="col-md-6 mb-3">
                               <a href="img-analyse/image(39).png" data-fancybox="paragraphes" data-caption="<p class='lead'>Des informations de contact mis en avant</p>" title="Solution de lisibilité">
-                                <img src="img-analyse/petit/image(39).png" class="img-fluid rounded" alt="Solution de lisibilité en image"/>
+                                <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(39).png" class="img-fluid rounded" alt="Solution de lisibilité en image"/>
                               </a>
                             </div>
                           </div>
                         </div>
                         <div class="col-md-4 mb-3">
                           <a href="img-analyse/image(38).png" data-fancybox="paragraphes" data-caption="<p class='lead'>Une meilleure visibilité des description</p>" title="Solution de lisibilité">
-                          <img src="img-analyse/petit/image(38).png" class="img-fluid rounded" alt="Solution de lisibilité en image" />
+                          <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(38).png" class="img-fluid rounded" alt="Solution de lisibilité en image" />
                         </a>
                         </div>
                       </div>
@@ -632,7 +635,7 @@
               </div>
               <div class="tab-pane fade" id="responsive" role="tabpanel" aria-labelledby="responsive-tab">
                  <!-- Repére : #ACS-6 --> 
-                <article>   
+                <article itemscope="" itemtype="https://schema.org/Article">   
                   <div class="article-header"> 
                     <h3 class="display-4">Le responsive</h3> 
                     <p class="text-muted lead mt-5"> Aujourd'hui, les responsive est bien plus qu'une mode, c'est un besoin. La plupart <a href="https://www.novaway.fr/blog/webmarketing/infographie-etude-comscore-numerique-2018" >des utilisateurs naviguent via leurs téléphones</a >. Il est donc primordial d'avoir un site qui s'adapte à tous types d'écrans.</p>
@@ -659,28 +662,28 @@
                         <div class="col-md-6 mb-3">
                           <div class="col-md-12 mb-3">
                             <a href="img-analyse/image(49).png" data-fancybox="responsives" data-caption="<p class='lead'>En plus de l'erreur de l'image qui remplace le contenu, celui-ci n'est pas centré</p>" title="Erreur responsives">
-                              <img src="img-analyse/petit/image(49).png" class="img-fluid rounded" alt="Erreur responsive, optimisation et seo"/>
+                              <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(49).png" class="img-fluid rounded" alt="Erreur responsive, optimisation et seo"/>
                             </a>
                           </div>
                           <div class="col-md-12 mb-3">
                             <a href="img-analyse/image(50).png" data-fancybox="responsives" data-caption="<p class='lead'>Le contenu de la bannière est mal centré</p>" title="Contenu non centré">
-                              <img src="img-analyse/petit/image(50).png" class="img-fluid rounded" alt="Erreur responsive contenu pas centré"/>
+                              <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(50).png" class="img-fluid rounded" alt="Erreur responsive contenu pas centré"/>
                             </a>
                           </div>
                           <div class="col-md-12 mb-3">
                             <a href="img-analyse/image(51).png" data-fancybox="responsives" data-caption="<p class='lead'>Le menu dans la page contact est activé par défaut. On y voit un bouton 'Toggle Navigation' et le menu contient un 'li' en trop</p>" title="Le menu est très mal codé">
-                              <img src="img-analyse/petit/image(51).png" class="img-fluid rounded" alt="Erreur responsive menu"/>
+                              <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(51).png" class="img-fluid rounded" alt="Erreur responsive menu"/>
                             </a>
                           </div>
                           <div class="col-md-12 mb-3">
                             <a href="img-analyse/image(52).png" data-fancybox="responsives" data-caption="<p class='lead'>Caractère trop petit pour les écran de petite taille</p>" title="Contenu non optimisé pour l'utilisateur">
-                              <img src="img-analyse/petit/image(52).png" class="img-fluid rounded" alt="Erreur d'optimisation utilisateur"/>
+                              <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(52).png" class="img-fluid rounded" alt="Erreur d'optimisation utilisateur"/>
                             </a>
                           </div>
                         </div>
                         <div class="col-md-6 mb-3">
                           <a href="img-analyse/image(48).png" data-fancybox="responsives" data-caption="<p class='lead'>Les contenu de la galerie d'image ne sont pas centré</p>" title="Erreur de design en responsive">
-                            <img src="img-analyse/petit/image(48).png" class="img-fluid rounded" alt="Erreur de design" />
+                            <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(48).png" class="img-fluid rounded" alt="Erreur de design" />
                           </a>
                         </div>
                       </div>
@@ -696,28 +699,28 @@
                         <div class="col-md-5 mb-3">
                           <div class="col-md-12 mb-3">
                             <a href="img-analyse/image(57).png" data-fancybox="responsives" data-caption="<p class='lead'>En plus de l'erreur de l'image qui remplace le contenu, celui-ci n'est pas centré</p>" title="Erreur responsives">
-                              <img src="img-analyse/petit/image(57).png" class="img-fluid rounded" alt="Erreur responsive, optimisation et seo"/>
+                              <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(57).png" class="img-fluid rounded" alt="Erreur responsive, optimisation et seo"/>
                             </a>
                           </div>
                           <div class="col-md-12 mb-3">
                             <a href="img-analyse/image(55).png" data-fancybox="responsives" data-caption="<p class='lead'>Le contenu de la bannière est mal centré</p>" title="Contenu non centré">
-                              <img src="img-analyse/petit/image(55).png" class="img-fluid rounded" alt="Erreur responsive contenu pas centré"/>
+                              <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(55).png" class="img-fluid rounded" alt="Erreur responsive contenu pas centré"/>
                             </a>
                           </div>
                           <div class="col-md-12 mb-3">
                             <a href="img-analyse/image(53).png" data-fancybox="responsives" data-caption="<p class='lead'>Le menu dans la page contact est activé par défaut. On y voit un bouton 'Toggle Navigation' et le menu contient un 'li' en trop</p>" title="Le menu est très mal codé">
-                              <img src="img-analyse/petit/image(53).png" class="img-fluid rounded" alt="Erreur responsive menu"/>
+                              <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(53).png" class="img-fluid rounded" alt="Erreur responsive menu"/>
                             </a>
                           </div>
                           <div class="col-md-12 mb-3">
                             <a href="img-analyse/image(54).png" data-fancybox="responsives" data-caption="<p class='lead'>Caractère trop petit pour les écran de petite taille</p>" title="Contenu non optimisé pour l'utilisateur">
-                              <img src="img-analyse/petit/image(54).png" class="img-fluid rounded" alt="Erreur d'optimisation utilisateur"/>
+                              <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(54).png" class="img-fluid rounded" alt="Erreur d'optimisation utilisateur"/>
                             </a>
                           </div>
                         </div>
                         <div class="col-md-7 mb-3">
                           <a href="img-analyse/image(56).png" data-fancybox="responsives" data-caption="<p class='lead'>En plus du changement d'affichage des images avec les Fancybox, ceux-ci sont maintenant centré</p>" title="Solution de design en responsive">
-                            <img src="img-analyse/petit/image(56).png" class="img-fluid rounded" alt="Solution de design" />
+                            <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(56).png" class="img-fluid rounded" alt="Solution de design" />
                           </a>
                         </div>
                       </div>
@@ -735,7 +738,7 @@
               </div>
               <div class="tab-pane fade" id="fancybox" role="tabpanel" aria-labelledby="fancybox-tab">
                  <!-- Repére : #ACS-7 --> 
-                <article>   
+                <article itemscope="" itemtype="https://schema.org/Article">   
                   <div class="article-header"> 
                     <h3 class="display-4">Les images</h3> 
                     <p class="text-muted lead mt-5">Les images ont un impact direct sur la vitesse de connexion d'un site web. Il est nécessaire de définir des formats d'images différents en fonction de la taille de l'écran afin d'alléger au maximum le poid de chaques pages.</p>
@@ -763,12 +766,12 @@
                       <div class="row align-items-center">
                         <div class="col-md-6 mb-3">
                           <a href="img-analyse/image(24).png" data-fancybox="images" data-caption="<p class='lead'>Une image non-optimisée</p>" title="Représentation d'une image non-optimisée">
-                            <img src="img-analyse/petit/image(24).png" class="img-fluid rounded" alt="Les paramètres d'une image pour le web" />
+                            <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(24).png" class="img-fluid rounded" alt="Les paramètres d'une image pour le web" />
                           </a>
                         </div>
                         <div class="col-md-6 mb-3">
                           <a href="img-analyse/image(25).png" data-fancybox="images" data-caption="<p class='lead'>Une image optimisée</p>" title="Représentation d'une image optimisée">
-                            <img src="img-analyse/petit/image(25).png" class="img-fluid rounded" alt="Les paramètres d'une image pour le web" />
+                            <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(25).png" class="img-fluid rounded" alt="Les paramètres d'une image pour le web" />
                           </a>
                         </div>
                       </div>
@@ -776,12 +779,12 @@
                       <div class="row align-items-center">
                         <div class="col-md-6 mb-3">
                           <a href="img-analyse/image(26).png" data-fancybox="images" data-caption="<p class='lead'>Une image non-optimisée</p>" title="Représentation d'une image non-optimisée">
-                            <img src="img-analyse/petit/image(26).png" class="img-fluid rounded" alt="Les paramètres d'une image pour le web" />
+                            <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(26).png" class="img-fluid rounded" alt="Les paramètres d'une image pour le web" />
                           </a>
                         </div>
                         <div class="col-md-6 mb-3">
                           <a href="img-analyse/image(27).png" data-fancybox="images" data-caption="<p class='lead'>Une image optimisée</p>" title="Représentation d'une image optimisée">
-                            <img src="img-analyse/petit/image(27).png" class="img-fluid rounded" alt="Les paramètres d'une image pour le web" />
+                            <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(27).png" class="img-fluid rounded" alt="Les paramètres d'une image pour le web" />
                           </a>
                         </div>
                       </div>
@@ -798,7 +801,7 @@
                       <div class="row align-items-center">
                         <div class="col-md-6 mb-3">
                           <a href="img-analyse/image(28).png" data-fancybox="images" data-caption="<p class='lead'>Résultat de l'optimisation</p>" title="Représentation du résultat d'une optimisation">
-                            <img src="img-analyse/petit/image(28).png" class="img-fluid rounded" alt="Les paramètres d'une image pour le web" />
+                            <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(28).png" class="img-fluid rounded" alt="Les paramètres d'une image pour le web" />
                           </a>
                         </div>
                       </div>
@@ -816,7 +819,7 @@
               </div>
               <div class="tab-pane fade" id="formulaire" role="tabpanel" aria-labelledby="formulaire-tab">
                     <!-- Repére : #ACS-8 --> 
-                <article>   
+                <article itemscope="" itemtype="https://schema.org/Article">   
                   <div class="article-header"> 
                     <h3 class="display-4">Le formulaire</h3> 
                     <p class="text-muted lead mt-5">Les formulaires sont souvent utilisés mais parfois de manière peu souhaitable ou peu accessible. C'est aussi le moyen pour les prospect de prendre contact avec vous. Il est donc important que celui-ci soit bien renseigné.</p>
@@ -835,7 +838,7 @@
                       <div class="row align-items-center">
                         <div class="col-md-12 mb-3">
                           <a href="img-analyse/image(33).png" data-fancybox="formulaire" data-caption="<p class='lead'>Une page contact non optimisé d'un point de vue UI & UX</p>" title="Représentation d'un formulaire non-optimisée">
-                            <img src="img-analyse/petit/image(33).png" class="img-fluid rounded" alt="Un formulaire non optimisé (UI & UX)" />
+                            <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(33).png" class="img-fluid rounded" alt="Un formulaire non optimisé (UI & UX)" />
                           </a>
                         </div>
                       </div>
@@ -854,7 +857,7 @@
                       <div class="row align-items-center">
                         <div class="col-md-12 mb-3">
                           <a href="img-analyse/image(39).png" data-fancybox="formulaire" data-caption="<p class='lead'>Une page contact optimisé d'un point de vue UI & UX</p>" title="Représentation d'un formulaire non-optimisée">
-                            <img src="img-analyse/petit/image(39).png" class="img-fluid rounded" alt="Un formulaire non optimisé (UI & UX)" />
+                            <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(39).png" class="img-fluid rounded" alt="Un formulaire non optimisé (UI & UX)" />
                           </a>
                         </div>
                       </div>
@@ -871,7 +874,7 @@
               </div>
               <div class="tab-pane fade" id="vitesse" role="tabpanel" aria-labelledby="vitesse-tab">
                 <!-- Repére : #ACS-9 -->
-                <article>
+                <article itemscope="" itemtype="https://schema.org/Article">
                   <div class="article-header">
                     <h3 class="display-4">La vitesse de connexion des pages html </h3>
                     <p class="text-muted lead mt-5"> Une page HTML peux, à force d'être surchargée de données, être longue à afficher le contenu. C'est souvent dû aux fichier externe qu'on lui rajoute. Les fichiers CSS, JavaScript ainsi que les images doivent donc être minifié au maximum au niveau de leurs poid.</p>
@@ -899,12 +902,12 @@
                       <div class="row align-items-center">
                         <div class="col-md-12">
                           <a href="img-analyse/image(40).png" data-fancybox="connexion" data-caption="<p class='lead'>Des appels de fichiers externe, et, certains inutile</p>" title="Problème de performance">
-                            <img src="img-analyse/petit/image(40).png" class="img-fluid rounded" alt="Problème de performances en image" />
+                            <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(40).png" class="img-fluid rounded" alt="Problème de performances en image" />
                           </a>
                         </div>
                         <div class="col-md-12">
                           <a href="img-analyse/image(42).png" data-fancybox="connexion" data-caption="<p class='lead'>Résultat des performances sur GTMetrix avant modifications</p>" title="Problème de performance">
-                            <img src="img-analyse/petit/image(42).png" class="img-fluid rounded" alt="Problème de performances en image" />
+                            <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(42).png" class="img-fluid rounded" alt="Problème de performances en image" />
                           </a>
                         </div>
                       </div>
@@ -912,12 +915,12 @@
                       <div class="row align-items-center">
                         <div class="col-md-12">
                           <a href="img-analyse/image(47).png" data-fancybox="connexion" data-caption="<p class='lead'>Des appels de fichiers externe, et, certains inutile</p>" title="Problème de performance">
-                            <img src="img-analyse/petit/image(47).png" class="img-fluid rounded" alt="Problème de performances en image" />
+                            <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(47).png" class="img-fluid rounded" alt="Problème de performances en image" />
                           </a>
                         </div>
                         <div class="col-md-12">
                           <a href="img-analyse/image(44).png" data-fancybox="connexion" data-caption="<p class='lead'>Résultat des performances sur GTMetrix avant modifications</p>" title="Problème de performance">
-                            <img src="img-analyse/petit/image(44).png" class="img-fluid rounded" alt="Problème de performances en image" />
+                            <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(44).png" class="img-fluid rounded" alt="Problème de performances en image" />
                           </a>
                         </div>
                       </div>
@@ -934,12 +937,12 @@
                     <div class="row align-items-center">
                       <div class="col-md-12">
                         <a href="img-analyse/image(41).png" data-fancybox="connexion" data-caption="<p class='lead'>Fichiers externes otimisés</p>" title="Solution de performance">
-                          <img src="img-analyse/petit/image(41).png" class="img-fluid rounded" alt="Solution de performances en image" />
+                          <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(41).png" class="img-fluid rounded" alt="Solution de performances en image" />
                         </a>
                       </div>
                       <div class="col-md-12">
                         <a href="img-analyse/image(43).png" data-fancybox="connexion" data-caption="<p class='lead'>Résultat des performances sur GTMetrix après modifications</p>" title="Problème de performance">
-                          <img src="img-analyse/petit/image(43).png" class="img-fluid rounded" alt="Problème de performances en image" />
+                          <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(43).png" class="img-fluid rounded" alt="Problème de performances en image" />
                         </a>
                       </div>
                     </div>
@@ -947,12 +950,12 @@
                     <div class="row align-items-center">
                       <div class="col-md-12">
                         <a href="img-analyse/image(46).png" data-fancybox="connexion" data-caption="<p class='lead'>Des appels de fichiers externe, et, certains inutile</p>" title="Problème de performance">
-                          <img src="img-analyse/petit/image(46).png" class="img-fluid rounded" alt="Problème de performances en image" />
+                          <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(46).png" class="img-fluid rounded" alt="Problème de performances en image" />
                         </a>
                       </div>
                       <div class="col-md-12">
                         <a href="img-analyse/image(45).png" data-fancybox="connexion" data-caption="<p class='lead'>Résultat des performances sur GTMetrix avant modifications</p>" title="Problème de performance">
-                          <img src="img-analyse/petit/image(45).png" class="img-fluid rounded" alt="Problème de performances en image" />
+                          <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(45).png" class="img-fluid rounded" alt="Problème de performances en image" />
                         </a>
                       </div>
                     </div>
@@ -968,7 +971,7 @@
               </div>
               <div class="tab-pane fade" id="code" role="tabpanel" aria-labelledby="code-tab">
                 <!-- Repére : #ACS-10 -->
-                <article>
+                <article itemscope="" itemtype="https://schema.org/Article">
                   <div class="article-header">
                     <h3 class="display-4">Le code</h3>
                     <p class="text-muted lead mt-5"> Pour réaliser un site durable dans le temps, le code dans les fichiers HTML, CSS et JavaScript doivent être écrit proprement avec une logique durable ! Le langage html est aujourd'hui de très bonnes qualité car il permet très facilement d'appeler du CSS ou du JavaScript séparément. Il est donc inutile de faire des mélanges de langages en dur dans les fichiers HTML. </p>
@@ -995,22 +998,22 @@
                       <div class="row align-items-center">
                         <div class="col-md-6 mb-3">
                           <a href="img-analyse/image(58).png" data-fancybox="code" data-caption="<p class='lead'>Un fichier CSS contenant trop de ligne de code, alors que bootstrap fait déjà une grosse partie à lui seul</p>" title="Problème de performance">
-                            <img src="img-analyse/petit/image(58).png" class="img-fluid rounded" alt="Problème de performances en image" />
+                            <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(58).png" class="img-fluid rounded" alt="Problème de performances en image" />
                           </a>
                         </div>
                         <div class="col-md-6 mb-3">
                           <a href="img-analyse/image(59).png" data-fancybox="code" data-caption="<p class='lead'>Beaucoup de ligne de code juste pour récupérer 3 illustrations</p>" title="Problème de performance">
-                            <img src="img-analyse/petit/image(59).png" class="img-fluid rounded" alt="Problème de performances en image" />
+                            <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(59).png" class="img-fluid rounded" alt="Problème de performances en image" />
                           </a>
                         </div>
                         <div class="col-md-6 mb-3">
                           <a href="img-analyse/image(60).png" data-fancybox="code" data-caption="<p class='lead'>Problème d'indentation et de structuration. En plus de l'énorme érreur SEO, on y voit des régles CSS dans du HTML</p>" title="Problème de maintenabilité, de SEO, d'indentation">
-                            <img src="img-analyse/petit/image(60).png" class="img-fluid rounded" alt="Problème de maintenabilité, de SEO, d'indentation en image" />
+                            <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(60).png" class="img-fluid rounded" alt="Problème de maintenabilité, de SEO, d'indentation en image" />
                           </a>
                         </div>
                         <div class="col-md-6 mb-3">
                           <a href="img-analyse/image(61).png" data-fancybox="code" data-caption="<p class='lead'>Du code HTML inutile</p>" title="Problème de compréhension">
-                            <img src="img-analyse/petit/image(61).png" class="img-fluid rounded" alt="Problème de compréhension en image" />
+                            <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(61).png" class="img-fluid rounded" alt="Problème de compréhension en image" />
                           </a>
                         </div>
                       </div>
@@ -1027,19 +1030,19 @@
                       <div class="row align-items-center">
                         <div class="col-md-8 mb-3">
                           <a href="img-analyse/image(64).png" data-fancybox="code" data-caption="<p class='lead'>Lindentation, la structuration sont présente en plus d'y voir aucunes régles CSS dans le HTML. Les classes sont bien nommé</p>" title="Solution de maintenabilité">
-                            <img src="img-analyse/petit/image(64).png" class="img-fluid rounded" alt="Problème de performances en image" />
+                            <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(64).png" class="img-fluid rounded" alt="Problème de performances en image" />
                           </a>
                         </div>
                         <div class="col-md-4 mb-3">
                           <div class="row">
                             <div class="col-md-12">
                               <a href="img-analyse/image(63).png" data-fancybox="code" data-caption="<p class='lead'>Ici on récupére les 3 illustrations dont on a besoin (version CSS non minifié)</p>" title="Solution de performance">
-                                <img src="img-analyse/petit/image(63).png" class="img-fluid rounded" alt="Problème de performances en image"/>
+                                <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(63).png" class="img-fluid rounded" alt="Problème de performances en image"/>
                               </a>
                             </div>
                             <div class="col-md-12">
                               <a href="img-analyse/image(62).png" data-fancybox="code" data-caption="<p class='lead'>Peu ligne de code, juste quelques classes de personnalisation (version CSS non minifié)</p>" title="Solution de performance et de maintenabilité">
-                                <img src="img-analyse/petit/image(62).png" class="img-fluid rounded" alt="Problème de maintenabilité, de SEO, d'indentation en image"/>
+                                <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(62).png" class="img-fluid rounded" alt="Problème de maintenabilité, de SEO, d'indentation en image"/>
                               </a>
                             </div>
                           </div>
@@ -1060,7 +1063,7 @@
 
               <div class="tab-pane fade" id="meta" role="tabpanel" aria-labelledby="meta-tab">
                 <!-- Repére : #SEO-1 -->
-                <article>
+                <article itemscope="" itemtype="https://schema.org/Article">
                   <div class="article-header">
                     <h3 class="display-4">Les balises Meta & Schema</h3>
                     <p class="text-muted lead mt-5">On entend par <a href="https://www.ionos.fr/digitalguide/sites-internet/developpement-web/les-principales-balises-meta-et-leurs-fonctions/" >balises méta</a > les informations codées qui se trouvent dans l’en-tête d’un document HTML et qui spécifient les métadonnées. [...] L’objectif de ces éléments méta est de livrer des données supplémentaires à un site Web pour faire en sorte de faciliter l’analyse des documents HTML ainsi que la gestion du contenu des fichiers. </p>
@@ -1092,12 +1095,12 @@
                         <div class="row">
                           <div class="col-md-6">
                             <a href="img-analyse/image(71).png" data-fancybox="meta" data-caption="<p class='lead'>Balise head de la page index</p>" title="Problème d'optimisation SEO">
-                              <img src="img-analyse/petit/image(71).png" class="img-fluid rounded" alt="Problème de d'optimisation SEO en image"/>
+                              <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(71).png" class="img-fluid rounded" alt="Problème de d'optimisation SEO en image"/>
                             </a>
                           </div>
                           <div class="col-md-6">
                             <a href="img-analyse/image(72).png" data-fancybox="meta" data-caption="<p class='lead'>Balise head de la page 2</p>" title="Problème d'optimisation SEO">
-                              <img src="img-analyse/petit/image(72).png" class="img-fluid rounded" alt="Problème d'optimisation SEO en image"/>
+                              <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(72).png" class="img-fluid rounded" alt="Problème d'optimisation SEO en image"/>
                             </a>
                           </div>
                         </div>  
@@ -1116,12 +1119,12 @@
                         <div class="row">
                           <div class="col-md-6">
                             <a href="img-analyse/image(73).png" data-fancybox="meta" data-caption="<p class='lead'>Balise head de la page Accueil</p>" title="Solution d'optimisation SEO">
-                              <img src="img-analyse/petit/image(73).png" class="img-fluid rounded" alt="Solution de d'optimisation SEO en image"/>
+                              <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(73).png" class="img-fluid rounded" alt="Solution de d'optimisation SEO en image"/>
                             </a>
                           </div>
                           <div class="col-md-6">
                             <a href="img-analyse/image(74).png" data-fancybox="meta" data-caption="<p class='lead'>Balise head de la page Contact</p>" title="Solution d'optimisation SEO">
-                              <img src="img-analyse/petit/image(74).png" class="img-fluid rounded" alt="Solution d'optimisation SEO en image"/>
+                              <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(74).png" class="img-fluid rounded" alt="Solution d'optimisation SEO en image"/>
                             </a>
                           </div>
                         </div>  
@@ -1142,7 +1145,7 @@
               </div>
               <div class="tab-pane fade" id="robots" role="tabpanel" aria-labelledby="robots-tab">
                 <!-- Repére : #SEO-2 -->
-                <article>
+                <article itemscope="" itemtype="https://schema.org/Article">
                   <div class="article-header">
                     <h3 class="display-4">La balise meta "robots" de Google</h3>
                     <p class="text-muted lead mt-5"><a href="https://www.definitions-seo.com/definition-de-balise-meta-robots/">La balise meta "robots"</a> est la plupart du temps essentielle aux robots des moteurs de recherche, car elle va indiquer si ces derniers doivent indexer (ou pas) et suivre les liens (ou pas) de la page. Ainsi que d'autres informations utiles aux spiders...</p>
@@ -1173,7 +1176,7 @@
                       <div class="col-md-12 mb-3">
                         <div class="row">
                           <a href="img-analyse/image(76).png" data-fancybox="robots" data-caption="<p class='lead'>Balise meta robots</p>" title="Solution d'optimisation SEO">
-                            <img src="img-analyse/petit/image(76).png" class="img-fluid rounded" alt="Solution de d'optimisation SEO en image"/>
+                            <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(76).png" class="img-fluid rounded" alt="Solution de d'optimisation SEO en image"/>
                           </a>
                         </div>  
                       </div>
@@ -1190,7 +1193,7 @@
               </div>
               <div class="tab-pane fade" id="mots-cles" role="tabpanel" aria-labelledby="mots-cles-tab">
                 <!-- Repére : #SEO-3 -->
-                <article>
+                <article itemscope="" itemtype="https://schema.org/Article">
                   <div class="article-header">
                     <h3 class="display-4">Les mots-clés</h3>
                     <p class="text-muted lead mt-5">En SEO, <a href="https://www.seoquantum.com/billet/recherche-mots-cles">les mots-clés</a> sont les idées et les sujets qui définissent le contenu de votre page de site web. En termes de référencement naturel, ce sont les mots et les phrases que les internautes utilisent dans les moteurs de recherche, également appelés "requêtes de recherche" ou "expression de recherche".</p>
@@ -1257,7 +1260,7 @@
               </div>
               <div class="tab-pane fade" id="hack" role="tabpanel" aria-labelledby="hack-tab">
                 <!-- Repére : #SEO-4 -->
-                <article>
+                <article itemscope="" itemtype="https://schema.org/Article">
                   <div class="article-header">
                     <h3 class="display-4">Black Hat SEO</h3>
                     <p class="text-muted lead mt-5">Certaines de <a href="https://www.1ere-position.fr/blog/black-hat-seo-la-fausse-bonne-idee/">ces techniques consistent à exploiter les failles</a> des robots d’indexation et les algorithmes de moteurs de recherche. Mais cette stratégie de référencement naturel n'est pas pertinente sur le long terme.</p>
@@ -1277,7 +1280,7 @@
                       <div class="row align-items-center">
                         <div class="col-md-12">
                           <a href="img-analyse/image(77).png" data-fancybox="blackhat" data-caption="<p class='lead'>Mauvaise technique de référencement</p>" title="Problème de SEO">
-                            <img src="img-analyse/petit/image(77).png" class="img-fluid rounded" alt="Problème de SEO en image" />
+                            <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(77).png" class="img-fluid rounded" alt="Problème de SEO en image" />
                           </a>
                         </div>
                       </div>
@@ -1301,7 +1304,7 @@
               </div>
               <div class="tab-pane fade" id="semantique" role="tabpanel" aria-labelledby="semantique-tab">
                 <!-- Repére : #SEO-5 -->
-                <article>
+                <article itemscope="" itemtype="https://schema.org/Article">
                   <div class="article-header">
                     <h3 class="display-4">Les balises semantiques</h3>
                     <p class="text-muted lead mt-5">La <a href="https://www.reputationvip.com/fr/blog/analyse-semantique-pour-booster-seo#Une-definition-de-la-recherche-semantique">sémantique SEO améliore votre visibilité naturelle sur Google</a>. Travailler en profondeur l’environnement sémantique de vos pages, les différentes relations qui existent entre elles (sujets connexes, liens), ainsi que l’architecture de votre site. L’objectif est clair : avoir un site le plus compréhensible possible pour Google pour maximiser votre présence dans les pages de résultats.</p>
@@ -1338,7 +1341,7 @@
               </div>
               <div class="tab-pane fade" id="titres" role="tabpanel" aria-labelledby="titres-tab">
                 <!-- Repére : #SEO-6 -->
-                <article>
+                <article itemscope="" itemtype="https://schema.org/Article">
                   <div class="article-header">
                     <h3 class="display-4">Les titres</h3>
                     <p class="text-muted lead mt-5">Les <a href="https://premier-sur-google.be/titres-seo">balises Hn</a > assurent une bonne structure de texte. Elles permettent ainsi d’obtenir un contenu appréciable autant par les internautes que par Google. De plus, elles vous permettent d’optimiser vos titres SEO. En bref, elles facilitent la lisibilité des pages web et leur référencement naturel sur internet.</p>
@@ -1382,7 +1385,7 @@
               </div>
               <div class="tab-pane fade" id="attributs" role="tabpanel" aria-labelledby="attributs-tab">
                 <!-- Repére : #SEO-7 -->
-                <article>
+                <article itemscope="" itemtype="https://schema.org/Article">
                   <div class="article-header">
                     <h3 class="display-4">Les attributs</h3>
                     <p class="text-muted lead mt-5">Si le contenu visuel est primordial, il ne peut se détacher du contenu textuel car Google n’interprète pas encore les <a href="https://smartkeyword.io/seo-on-page-images-attribut-alt/">images</a >.</p>
@@ -1420,7 +1423,7 @@
               </div>
               <div class="tab-pane fade" id="interne" role="tabpanel" aria-labelledby="interne-tab">
                 <!-- Repére : #SEO-8 -->
-                <article>
+                <article itemscope="" itemtype="https://schema.org/Article">
                   <div class="article-header">
                     <h3 class="display-4">Les liens internes</h3>
                     <p class="text-muted lead mt-5"><a href="https://www.sistrix.fr/demandez-a-sistrix/optimisation-onpage/bases-seo-optimisation-liens-internes/">Les liens internes</a> sont un outil SEO très puissant et ils ne devraient pas être limités à la navigation et à l’utilisation de mots-clés dans le texte de lien.</p>
@@ -1470,7 +1473,7 @@
               </div>
               <div class="tab-pane fade" id="externe" role="tabpanel" aria-labelledby="externe-tab">
                 <!-- Repére : #SEO-9 -->
-                <article>
+                <article itemscope="" itemtype="https://schema.org/Article">
                   <div class="article-header">
                     <h3 class="display-4">Les liens externes</h3>
                     <p class="text-muted lead mt-5">Aussi appelée le « netlinking », cette technique fait partie des trois piliers fondamentaux du SEO avec la technique et le contenu. Il s’agit d’un lien mis sur une page d’un site et qui renvoie vers un autre site web : c’est un lien externe, ou backlink.</p>
@@ -1483,7 +1486,7 @@
                         <div class="row">
                           <div class="col-md-12">
                             <a href="img-analyse/image(75).png" data-fancybox="lien-externe" data-caption="<p class='lead'>Aucun des liens présent dans le bas de page ne pointe vers un site du même secteur d'activité</p>" title="Problème d'optimisation SEO">
-                              <img src="img-analyse/petit/image(75).png" class="img-fluid rounded" alt="Problème de d'optimisation des back-link SEO en image"/>
+                              <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(75).png" class="img-fluid rounded" alt="Problème de d'optimisation des back-link SEO en image"/>
                             </a>
                           </div>
                         </div>  
@@ -1520,7 +1523,7 @@
               </div>
               <div class="tab-pane fade" id="rapidite" role="tabpanel" aria-labelledby="rapidite-tab">
                 <!-- Repére : #SEO-10 -->
-                <article>
+                <article itemscope="" itemtype="https://schema.org/Article">
                   <div class="article-header">
                     <h3 class="display-4">Les effets de la rapidite du site sur le SEO</h3>
                     <p class="text-muted lead mt-5">Bien que celui-ci soit rapide dans son chargement car il est visité en local, la rapidité à son importance et a un impact sur <a href="https://fr.oncrawl.com/referencement/vitesse-des-pages-impact-seo/">l’expérience utilisateur</a>. Google prend en compte ce critère pour le référencement du site</p>
@@ -1569,29 +1572,30 @@
               </div>
             </div>
           </div>
+          <a href="#top" class="btn btn-clean rounded-pill btn-chouette top-smooth"><i class="fas fa-angle-up"></i></a>
         </div>
       </section>
+      <footer class="bg-chouette" itemscope="" itemtype="https://schema.org/WPFooter">
+        <div class="container py-5">
+          <div class="row text-center align-items-center">
+            <div class="col-md-6 mb-3 text-center my-3">
+              <h2 class="lead-2">La Chouette Agence<br /><span class="lead" >Développeur web - Projet N°4 - OpenClassRooms</span></h2>
+            </div>
+            <div class="col-md-6 mb-3 text-center my-3">
+              <h3 class="text-white lead">Suivez-moi sur mes réseaux sociaux</h3>
+              <nav class="nav justify-content-center" itemscope="" itemtype="https://schema.org/SiteNavigationElement">
+                <a class="nav-link text-white h3" href="https://www.facebook.com/M.Scroart" title="Lien vers Facebook"><i class="fa fa-facebook"></i></a>
+                <a class="nav-link text-white h3" href="https://www.twitter.com/Mnsr_Graphiste" title="Lien vers Twitter"><i class="fa fa-twitter"></i></a>
+                <a class="nav-link text-white h3" href="https://fr.linkedin.com/in/mndesiign" title="Lien vers Linkedin"><i class="fa fa-linkedin"></i></a>
+                <a class="nav-link text-white h3" href="https://www.instagram.com/scroart/" title="Lien vers Instagram"><i class="fa fa-instagram"></i></a>
+              </nav>
+            </div>
+          </div>
+          <div class="row text-center mt-5">
+            <p class="col-md-12 text-white">© 2020 <a href="index.html" title="Lien vers La Chouette Agence" class="text-light">La Chouette Agence</a>. Réalisation : <a href="mailto:mathieu.nesseir@gmail.com" title="Lien vers La Chouette Agence" class="text-light">Mathieu N.</a></p>
+          </div>
+        </div>
+      </footer>
     </main>
-    <footer class="bg-chouette" itemscope="" itemtype="https://schema.org/WPFooter">
-      <div class="container py-5">
-        <div class="row text-center align-items-center">
-          <div class="col-md-6 mb-3 text-center my-3">
-            <h2 class="lead-2">La Chouette Agence<br /><span class="lead" >Développeur web - Projet N°4 - OpenClassRooms</span></h2>
-          </div>
-          <div class="col-md-6 mb-3 text-center my-3">
-            <h3 class="text-white lead">Suivez-moi sur mes réseaux sociaux</h3>
-            <nav class="nav justify-content-center" itemscope="" itemtype="https://schema.org/SiteNavigationElement">
-              <a class="nav-link text-white h3" href="https://www.facebook.com/M.Scroart" title="Lien vers Facebook"><i class="fa fa-facebook"></i></a>
-              <a class="nav-link text-white h3" href="https://www.twitter.com/Mnsr_Graphiste" title="Lien vers Twitter"><i class="fa fa-twitter"></i></a>
-              <a class="nav-link text-white h3" href="https://fr.linkedin.com/in/mndesiign" title="Lien vers Linkedin"><i class="fa fa-linkedin"></i></a>
-              <a class="nav-link text-white h3" href="https://www.instagram.com/scroart/" title="Lien vers Instagram"><i class="fa fa-instagram"></i></a>
-            </nav>
-          </div>
-        </div>
-        <div class="row text-center mt-5">
-          <p class="col-md-12 text-white">© 2020 <a href="index.html" title="Lien vers La Chouette Agence" class="text-light">La Chouette Agence</a>. Réalisation : <a href="mailto:mathieu.nesseir@gmail.com" title="Lien vers La Chouette Agence" class="text-light">Mathieu N.</a></p>
-        </div>
-      </div>
-    </footer>
   </body>
 </html>

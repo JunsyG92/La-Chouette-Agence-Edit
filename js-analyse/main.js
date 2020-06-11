@@ -1,0 +1,1 @@
+$(window).scroll(function(){$(this).scrollTop()>950?$(".top-smooth").addClass("transition-smooth "):$(".top-smooth").removeClass("transition-smooth ")});

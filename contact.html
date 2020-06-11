@@ -1,20 +1,7 @@
 <!doctype html>
 <html lang="fr-FR">
 <head itemscope="" itemtype="https://schema.org/WebSite">
-	<!-- 
-	*	<HEAD>
-	*	- Changement des dichiers de bootsrap en CDN pour le CSS/JS/JQUERY
-	*	- Ajout d'un titre dans la balise <title>
-	*	- Ajout d'une description dans la balise méta description
-	*	- Ajout de l'attribut "defer" au début de chaque balise <script>
-	*	- Changement de la valeur "lang" dans la balise <html> en "fr"
-	*	- Ajout d'une balise no-script
-	*	- Modification des tailles des images via Photoshop
-	*	- Amélioration du poid des images via un convertisseur
-	*	- Changement de la favicon.jpg en favicon.ico / l'attribut "type" / l'attribut "rel"
-	*	- Fichier CSS "et-line.css" alléger du code non-utilisable & minifié
-	*	-
-	-->
+	
 	<meta charset="UTF-8">
 	<meta name="keywords" content="seo, google, site web, site internet, agence design paris, agence design">
 	<meta name="description" content="La Chouette agence ">
@@ -32,11 +19,9 @@
     <title>La Chouette Agence - Contact</title>
 
 </head>
-	<body itemscope="" itemtype="https://schema.org/WebPage">
+	<body itemscope="" itemtype="https://schema.org/ContactPage">
 		<noscript>Votre navigateur ne supporte pas javascript !</noscript>
-		<!--
-			*	- Récupération du <header> et de ses modifications depuis le fichier index.html
-		-->
+		
 		<main>
 			<header itemscope="" itemtype="https://schema.org/WPHeader">
 				<nav class="navbar navbar-expand-lg navbar-light container py-4" itemscope="" itemtype="https://schema.org/SiteNavigationElement">
@@ -47,21 +32,14 @@
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-						<div class="navbar-nav">
+						<div class="navbar-nav" itemscope="" itemtype="https://schema.org/Menu">
 							<a class="nav-link" href="analyse.html" title="Page de contact">Analyse</a>
 							<a class="nav-link" href="contact.html" title="Page de contact">Contact</a>
 						</div>
 					</div>
 				</nav>
 			</header>
-
-			<!--
-				*	- 
-				*	- 
-				*	- 
-				*	- 
-				*	- 
-			-->
+			
 			<section class="py-7 bg-chouette">
 				<div class="container">
 					<div class="row">
@@ -75,11 +53,7 @@
 					</div>
 				</div>
 			</section>
-			<!--
-				*	- Changement <div> en <section>
-				*	- Ajoute attr "type" dans les <input />
-
-			-->
+			
 			<section class="py-7">
 				<div class="container bloc-lg">
 					<div class="row align-items-center">
@@ -88,7 +62,7 @@
 							<h2 class="lead-3">Contacter la Chouette Agence !</h2>
 							<nav class="nav flex-column my-3" itemscope="" itemtype="https://schema.org/SiteNavigationElement">
 								<a href="mailto:contact@lachouetteagence.com" class="nav-link text-dark d-flex align-items-center"><i class="fas fa-at h5 mr-3"></i> contact@lachouetteagence.com</a>
-								<a href="" class="nav-link text-dark d-flex align-items-center"><i class="fas fa-map-marker-alt h5 mr-3"></i> 2 place Sathonay 69001 Lyon</a>
+								<a href="" class="nav-link text-dark d-flex align-items-center"><i class="fas fa-map-marker-alt h5 mr-3"></i> 2 place Sathonay, 69001 Lyon</a>
 							</nav>
 							<p>Ouvert de 9h à 18h, du lundi au vendredi</p>
 						</div>
@@ -117,9 +91,6 @@
 				</div>
 			</section>
 			
-			<!--
-				*	- Récupération du <footer> et de ses modifications depuis le fichier index.html
-			-->
 			<footer class="bg-chouette" itemscope="" itemtype="https://schema.org/WPFooter">
 				<div class="container py-5">
 					<div class="row text-center align-items-center">
