@@ -103,9 +103,9 @@
               </div>
               <div class="card border-0 bg-transparent">
                 <div class="card-header border-0 bg-transparent" id="headingTwo"> 
-                  <h5 class="mb-0">   
-                    <button class="border-0 bg-transparent collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> SEO</button> 
-                  </h5>
+                  <h3 class="mb-0">   
+                    <button class="border-0 bg-transparent collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">SEO</button> 
+                  </h3>
                 </div>
               </div>
               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
@@ -365,7 +365,7 @@
                     <div class="article-body py-5">
                       <div class="mb-5">
                         <h4>Problème analysé</h4>
-                        <p>Dans la version original, le header était codé différement dans chacune des pages.<br />Nous allons juste parler de la version du fichier index.html puisque   celui-ci doit être le même pour la page "contact".<br />En   plus de son problème lié au SEO (manque d'une balise sémantique "header"), la navigation de celui-ci n'était   pas optimisé.<br />Elle possédait des liens vers page2,   ainsi que deux liens vers la page d'accueil. Elle   possédait aussi une balise "li" en trop car celle-ci   était vide. Il manque aussi un attribut "alt" pour le   logo et des attributs "title" pour les liens. </p>
+                        <p>Dans la version original, le header était codé différement dans chacune des pages.<br />Nous allons juste parler de la version du fichier index.html puisque celui-ci doit être le même pour la page "contact".<br />En plus de son problème lié au SEO (manque d'une balise sémantique "header"), la navigation de celui-ci n'était pas optimisé.<br />Elle possédait des liens vers page2, ainsi que deux liens vers la page d'accueil. Elle possédait aussi une balise "li" en trop car celle-ci était vide.</p>
                       </div>
                       <div class="mb-5">
                         <h4>Bonnes pratiques à adopter</h4>
@@ -375,7 +375,6 @@
                           <li>Ajouter des balises "li" en trop ne sert à rien.</li>
                           <li>Le logo posséde déjà un lien vers la page d'accueil, c'est donc inutile d'en rajouter un en plus</li>
                           <li>Bootstrap posséde une trés bonne librairie pour les barres de navigations</li>
-                          <li>Utiliser les attributs pour expliquer le contenu du "header" avec un attributs "alt" pour le logo et des attributs "title" pour les liens</li>
                         </ul>
                       </div>
                       <div class="mb-5">
@@ -415,7 +414,7 @@
                         <li>Garder en tête qu'un header doit être le même sur toutes les pages.</li>
                         <li>Le header est l'outil que tout utilisateur utilisera pour naviguer sur votre site. Simplifiez le au maximum.</li>
                         <li>Utilisez Bootstrap, et si besoin, modifié votre header pour avoir un rendu plus personnalisé.</li>
-                        <li> décrivez au mieux chaque composant que celui-ci est en possession.</li>
+                        <li>Décrivez au mieux chaque composant que celui-ci est en possession.</li>
                       </ul>
                       <p>Voici le résultat finale sur une taille d'écran d'ordinateur et mobile pour toutes les pages du site :</p>
                       <div class="row align-items-center">
@@ -539,19 +538,19 @@
                   <div class="article-body py-5"> 
                     <div class="mb-5"> 
                       <h4>Problème analysé</h4>
-                      <p>En plus des problèmes liés à la couleurs et à la tailles des caractères, beaucoup de contenu ne sont pas écrit en duc dans le code mais remplacé par des images illustrant des paragraphes.</p>
+                      <p>En plus des problèmes liés à la couleurs et à la tailles des caractères, beaucoup de contenu ne sont pas écrit en dur dans le code mais remplacé par des images illustrant des paragraphes.</p>
                     </div>
                     <div class="mb-5">
                       <h4>Bonnes pratiques à adopter</h4>
                       <ul>
-                        <li>Faire très attention à la couleurs utilisépour du texte car il peut devenir inlisible sur un fond de couleur inapproprié.</li>
+                        <li>Faire très attention à la couleurs utilisé pour du texte car il peut devenir illisible sur un fond de couleur inapproprié.</li>
                         <li>Garder une tailles de caractères lisible pour les utilisateurs</li>
                         <li>Le contenu doit être écrit en dur dans le code et non en utilisant une images qui contient le texte en question.</li>
                       </ul>
                     </div>
                     <div class="mb-5">
                       <h4>Explication du problème</h4>
-                      <p>Tous texte doit être lisible, que ce soit dans la taille des caractères ou dans leurs couleurs ou dans leurs espacements. En plus de ça, ceux-ci doit être coder dans les balises de type paragraphe. Le fait de remplacer le texte par des images qui contient le contenu, ça posera problème au niveau du référencement, de la lisibilité de celui-ci et dans la rapidité du chargement de vos pages. </p>
+                      <p>Tous texte doit être lisible, que ce soit dans la taille des caractères, dans leurs couleurs ou dans leurs espacements. En plus de ça, ceux-ci doit être coder dans les balises de type paragraphe. Le fait de remplacer le texte par des images qui contient le contenu, ça posera problème au niveau du référencement, de la lisibilité de celui-ci et dans la rapidité du chargement de vos pages. </p>
                       <div class="row align-items-center">
                         <div class="col-md-4 mb-3">
                           <a href="img-analyse/image(32).png" data-fancybox="paragraphes" data-caption="<p class='lead'>Une description trop petite</p>" title="Problème de lisibilité">
@@ -639,7 +638,7 @@
                   <div class="article-header"> 
                     <h3 class="display-4">Le responsive</h3> 
                     <p class="text-muted lead mt-5"> Aujourd'hui, les responsive est bien plus qu'une mode, c'est un besoin. La plupart <a href="https://www.novaway.fr/blog/webmarketing/infographie-etude-comscore-numerique-2018" >des utilisateurs naviguent via leurs téléphones</a >. Il est donc primordial d'avoir un site qui s'adapte à tous types d'écrans.</p>
-                    <p> Concernant la balise "meta" "viewport", celle-ci est <a href="https://modelessdesign.com/backdrop/283" >mal configuré pour le responsive</a > car les écrans d'aujourd'hui peuvent parfois avoir la caméra frontale qui empiéte sur le haut de l'écran. </p>
+                    <p class="text-muted lead mt-5"> Concernant la balise "meta" "viewport", celle-ci est <a href="https://modelessdesign.com/backdrop/283" >mal configuré pour le responsive</a > car les écrans d'aujourd'hui peuvent parfois avoir la caméra frontale qui empiéte sur le haut de l'écran.</p>
                   </div>
                   <div class="article-body py-5">
                     <div class="mb-5">
@@ -845,7 +844,7 @@
                     </div>
                     <div class="mb-5">
                       <h4>Explication du problème</h4>
-                      <p>Une mauvaise visibilité des informations vous concernant peut vous faire perdre des clients potentiel (La Chouette agence est une agence web mais elle ne possède une page contact qui ne donne pas envie...) et le formulaire doit être optimiser d'un point de vue UI (interface utilisateur) et UX (expérience utilisateur). </p>
+                      <p>Une mauvaise visibilité des informations vous concernant peut vous faire perdre des clients potentiel (La Chouette agence est une agence web mais elle possède une page contact qui ne donne pas envie...) et le formulaire doit être optimiser d'un point de vue UI (interface utilisateur) et UX (expérience utilisateur). </p>
                     </div>
                     <div class="mb-5">
                       <h4>Action recommandée</h4>
@@ -890,14 +889,14 @@
                         <li>Minifier tous vos fichiers CSS et JavaScript</li>
                         <li>Alléger vos images comme expliquer dans la session concerné</li>
                         <li>Vérifier la performances de connexion de vos pages et améliorer les si besoin</li>
-                        <li> dans le HTML, utilisé uniquement les fichiers CSS et JavaScript dont vous avez besoin</li>
+                        <li>Dans le HTML, utilisé uniquement les fichiers CSS et JavaScript dont vous avez besoin</li>
                         <li>Eviter d'écrire du code inutile dans votre css et js ou utilisé une technologie qui vous permet de supprimer les bouts de code non-utilisés.</li>
                         <li>Pas besoin de réécrire du code si Bootsrap vous permet déjà de le faire</li>
                       </ul>
                     </div>
                     <div class="mb-5">
                       <h4>Explication du problème</h4>
-                      <p>Tous ça ralentisse fortement vos pages et en plus de ça,   votre code devient difficilement maintenable au fil du temps. </p>
+                      <p>Tout ça ralentisse fortement vos pages et en plus de ça,   votre code devient difficilement maintenable au fil du temps. </p>
                       <p>Page d'accuei, fichier index.html :</p>
                       <div class="row align-items-center">
                         <div class="col-md-12">
@@ -932,6 +931,7 @@
                       <li>Réduisez les images</li>
                       <li>Favoriser les CDN pour vos librairie CSS et JS si vous utilisez une bonne partie de leurs codes</li>
                       <li>Sinon favoriser les fichiers locaux</li>
+                      <li>Utilisez des outils pour analyser les performances du site</li>
                     </ul>
                     <p>Page d'accuei, fichier index.html :</p>
                     <div class="row align-items-center">
@@ -989,7 +989,6 @@
                         <li>Appeler uniquement les fichiers externes qui ont une réelle utilité pour vos pages</li>
                         <li>Penser au long terme, et nommer vos classes pour que celles-ci soient comphérensible dans leur fonction pour faciliter le travail à d'autres développeur</li>
                         <li>Utiliser les balises sémantiques afin de mieux structurer le code HTML</li>
-                        <li>En plus d'être un problème SEO, la balise "title" est aussi importante pour l'utilisateur car elle lui permet de comprendre le contenu de la page en quelques mots</li>
                       </ul>
                     </div>
                     <div class="mb-5">
@@ -1025,7 +1024,7 @@
                         <li>Si le framework front-end qu'on utilise le fait déjà, autant ne pas le re-coder mais le personnaliser si besoin</li>
                         <li>Bien indenter le code</li>
                         <li>Tous code CSS ou JavaScript doit se trouver dans un fichier externe</li>
-                        <li>Bien nommer ses classes ou pour se retrouver facilement dans 6 mois</li>
+                        <li>Bien nommer ses classes pour se retrouver facilement dans 6 mois</li>
                       </ul>
                       <div class="row align-items-center">
                         <div class="col-md-8 mb-3">
@@ -1072,7 +1071,7 @@
                   <div class="article-body py-5">
                     <div class="mb-5">
                       <h4>Problème analysé</h4>
-                      <p>La balise "title" de chaque page n'est pas du tout optimisé pour le SEO en plus des balises "meta" qui ont une énorme importances pour le référencement. Sachant que la balise "meta" "keyword" ne possède plus aucun intérêt et que la balise "meta" "description" n'a aucun contenu, google aura énormément de mal à positionner le site.</p>
+                      <p>Les balises "meta" qui ont une énorme importances pour le référencement ne sont pas otimisées. Sachant que la balise "meta" "keyword" ne possède plus aucun intérêt et que la balise "meta" "description" n'a aucun contenu, google aura énormément de mal à positionner le site.</p>
                       <p>Aucune pratique concernant les balises schema.</p>
                     </div>
                     <div class="mb-5">
@@ -1113,7 +1112,7 @@
                         <li>Vos balises "meta" "description" peuvent favoriser vos taux de clics ou leur nuire</li>
                         <li>En termes de résultats de recherche, c’est votre meta description qui occupe le plus de place</li>
                         <li>La balise Title permet de décrire de manière généraliste le contenu d’un document.</li>
-                        li
+                        <li>Ajoutez du Schema pour faciliter la compréhesion de vos composant au GoogleBot</li>
                       </ul>
                       <div class="col-md-12 mb-3">
                         <div class="row">
@@ -1159,7 +1158,7 @@
                       <h4>Bonnes pratiques à adopter</h4>
                       <ul>
                         <li>Ajoutez la balise meta robots dans l'en-tête de chacune de vos pages</li>
-                        <li>Indiquez, dans cette balise, les instructions à donner au robot de Google (suivre les lines ou non, etc...)</li>
+                        <li>Indiquez, dans cette balise, les instructions à donner au robot de Google (suivre les liens ou non, etc...)</li>
                       </ul>
                     </div>
                     <div class="mb-5">
@@ -1185,7 +1184,7 @@
                       <h4>Références</h4>
                       <ul>
                         <li><a href="https://www.webrankinfo.com/dossiers/conseils/balise-meta-robots">Liste des valeurs pour la balise meta robots</a></li>
-                        <li><a href="https://developers.google.com/search/reference/robots_meta_tag?hl=fr"></a>Google développeur</li>
+                        <li><a href="https://developers.google.com/search/reference/robots_meta_tag?hl=fr">Google développeur</a></li>
                       </ul>
                     </div>
                   </div>
@@ -1312,7 +1311,7 @@
                   <div class="article-body py-5">
                     <div class="mb-5">
                       <h4>Problème analysé</h4>
-                      <p>La structure des fichiers HTML n'est pas optimisé dans sa signification. Ce qui est problèmatique pour l'analyse du site par les robot</p>
+                      <p>La structure des fichiers HTML n'est pas optimisé dans sa signification. Ce qui est problématique pour l'analyse du site par les robot</p>
                     </div>
                     <div class="mb-5">
                       <h4>Bonnes pratiques à adopter</h4>
@@ -1393,16 +1392,16 @@
                   <div class="article-body py-5">
                     <div class="mb-5">
                       <h4>Problème analysé</h4> 
-                      <p>Les atributs ont le même problème que j'ai pu trouver pour les balises "hn"; Ceux-ci ne sont pas otimiser dans leurs contenus pour les images et les liens que possède chaque pages</p>
+                      <p>Les atributs ont le même problème que j'ai pu trouver pour les balises "hn". Ceux-ci ne sont pas optimiser dans leurs contenus pour les images et les liens que possède chaque pages</p>
                     </div>
                     <div class="mb-5">
                       <h4>Bonnes pratiques à adopter</h4>
-                      <p>Optimiser sa balise alt c'est optimiser son référencement, les mots clés contenus dans le ALT sont pris en compte pour le positionnement sur les moteurs de recherche !</p>
+                      <p>Optimiser son attribut alt c'est améliorer son référencement: les mots clés contenus dans le ALT sont pris en compte pour le positionnement sur les moteurs de recherche !</p>
                     </div>
                     <div class="mb-5">
                       <h4>Explication du problème</h4>
                       <ul>
-                        <li>Optimiser sa balise alt c’est optimiser son référencement, les mots clés contenus dans le ALT sont pris en compte pour le positionnement sur les moteurs de recherche : cet attribut aide Google à contextualiser votre contenu.</li>
+                        <li>Optimiser son attribut alt c’est optimiser son référencement, les mots clés contenus dans le ALT sont pris en compte pour le positionnement sur les moteurs de recherche : cet attribut aide Google à contextualiser votre contenu.</li>
                         <li>La recherche universelle est de plus en plus importante. Référencer ses images dans les moteurs de recherche devient donc essentiel pour être visible, et cela peut générer du trafic vers votre site via Google Images par exemple.</li>
                         <li>L’attribut alt est lu oralement par le le lecteur d’écran pour des personnes malvoyantes.</li>
                         <li>Ce sera le contenu affiché si votre site est ralenti par un problème quelconque (serveur, lenteur..), ce qui permet donc de bien comprendre que cela est censé indiquer à l’utilisateur ce qu’on devrait trouver à la place de cette image.</li>
@@ -1482,15 +1481,6 @@
                     <div class="mb-5">
                       <h4>Problème analysé</h4>
                       <p>Les liens sortant ne correspondent en aucun cas au secteur d'activité du site</p>
-                      <div class="col-md-12 mb-3">
-                        <div class="row">
-                          <div class="col-md-12">
-                            <a href="img-analyse/image(75).png" data-fancybox="lien-externe" data-caption="<p class='lead'>Aucun des liens présent dans le bas de page ne pointe vers un site du même secteur d'activité</p>" title="Problème d'optimisation SEO">
-                              <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(75).png" class="img-fluid rounded" alt="Problème de d'optimisation des back-link SEO en image"/>
-                            </a>
-                          </div>
-                        </div>  
-                      </div>
                     </div>
                     <div class="mb-5">
                       <h4>Bonnes pratiques à adopter</h4>
@@ -1502,6 +1492,15 @@
                     <div class="mb-5">
                       <h4>Explication du problème</h4>
                       <p>Pour éviter toute pénalité de Google, il est primordial d’être vigilant quant à la qualité des sites sur lesquels on pose des liens à l’instant T, mais également à leur évolution au fil du temps.</p>
+                      <div class="col-md-12 mb-3">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <a href="img-analyse/image(75).png" data-fancybox="lien-externe" data-caption="<p class='lead'>Aucun des liens présent dans le bas de page ne pointe vers un site du même secteur d'activité</p>" title="Problème d'optimisation SEO">
+                              <img itemscope="" itemtype="https://schema.org/ImageGallery" src="img-analyse/petit/image(75).png" class="img-fluid rounded" alt="Problème de d'optimisation des back-link SEO en image"/>
+                            </a>
+                          </div>
+                        </div>  
+                      </div>
                     </div>
                     <div class="mb-5">
                       <h4>Action recommandée</h4>
